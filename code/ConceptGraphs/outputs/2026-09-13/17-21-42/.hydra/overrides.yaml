@@ -1,0 +1,11 @@
+- dataset_root=/content/drive/MyDrive/research_project/datasets/replica_conceptgraphs
+- dataset_config=/content/drive/MyDrive/research_project/code/ConceptGraphs/conceptgraph/dataset/dataconfigs/replica/replica.yaml
+- scene_id=room0
+- start=0
+- end=-1
+- stride=5
+- image_height=680
+- image_width=1200
+- gsa_variant=none
+- device=cuda
+- save_pcd=true
