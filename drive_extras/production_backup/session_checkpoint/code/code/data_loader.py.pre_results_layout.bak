@@ -1,0 +1,275 @@
+from pathlib import Path
+
+import numpy as np
+from PIL import Image
+
+
+DEFAULT_K = np.array(
+    [
+        [600.0, 0.0, 599.5],
+        [0.0, 600.0, 339.5],
+        [0.0, 0.0, 1.0],
+    ],
+    dtype=np.float64,
+)
+
+DEPTH_SCALE = 6553.5
+
+
+class ReplicaScene:
+    """
+    Loader for the verified Replica RGB-D layout:
+
+        scene/
+        ├── rgb/000000.jpg ... 001999.jpg
+        ├── depth/000000.png ... 001999.png
+        └── traj.txt
+
+    The production-facing pose is the absolute Replica
+    camera-to-world pose Ti from traj.txt.
+
+    Relative poses inv(T0) @ Ti are also retained internally
+    as `poses_c2w` for compatibility with earlier workflows.
+    """
+
+    def __init__(
+        self,
+        scene_dir,
+        min_depth=0.1,
+        max_depth=8.0,
+    ):
+        self.scene_dir = Path(scene_dir)
+        self.rgb_dir = self.scene_dir / "rgb"
+        self.depth_dir = self.scene_dir / "depth"
+        self.traj_path = self.scene_dir / "traj.txt"
+
+        self.min_depth = float(min_depth)
+        self.max_depth = float(max_depth)
+
+        if not self.scene_dir.is_dir():
+            raise FileNotFoundError(
+                f"Scene directory not found: {self.scene_dir}"
+            )
+
+        if not self.rgb_dir.is_dir():
+            raise FileNotFoundError(
+                f"RGB directory not found: {self.rgb_dir}"
+            )
+
+        if not self.depth_dir.is_dir():
+            raise FileNotFoundError(
+                f"Depth directory not found: {self.depth_dir}"
+            )
+
+        if not self.traj_path.is_file():
+            raise FileNotFoundError(
+                f"Trajectory file not found: {self.traj_path}"
+            )
+
+        self.frame_ids = self._list_frames()
+        self.poses_raw = self._load_poses()
+
+        if len(self.frame_ids) != len(self.poses_raw):
+            raise ValueError(
+                f"Frame/pose mismatch: "
+                f"{len(self.frame_ids)} frames vs "
+                f"{len(self.poses_raw)} poses"
+            )
+
+        self.poses_c2w = self._make_relative_c2w()
+
+    def _list_frames(self):
+        rgb_ids = {
+            p.stem
+            for p in self.rgb_dir.glob("*.jpg")
+        }
+
+        depth_ids = {
+            p.stem
+            for p in self.depth_dir.glob("*.png")
+        }
+
+        ids = sorted(rgb_ids & depth_ids)
+
+        if not ids:
+            raise RuntimeError(
+                f"No matching RGB/depth frames found in {self.scene_dir}"
+            )
+
+        return ids
+
+    def _load_poses(self):
+        values = np.loadtxt(
+            self.traj_path,
+            dtype=np.float64,
+        )
+
+        if values.ndim == 1:
+            if values.size != 16:
+                raise ValueError(
+                    f"Unexpected trajectory shape: {values.shape}"
+                )
+            values = values.reshape(1, 16)
+
+        if values.ndim != 2 or values.shape[1] != 16:
+            raise ValueError(
+                f"Expected trajectory shape (N, 16), "
+                f"got {values.shape}"
+            )
+
+        return values.reshape(-1, 4, 4)
+
+    def _make_relative_c2w(self):
+        """
+        Replica/OpenFusion convention verified previously:
+
+            relative_transform(T0, Ti) = inv(T0) @ Ti
+
+        The resulting matrices are camera-to-world poses for
+        the coordinate system used by this contribution pipeline.
+        """
+        T0_inv = np.linalg.inv(self.poses_raw[0])
+        return np.stack(
+            [T0_inv @ pose for pose in self.poses_raw],
+            axis=0,
+        )
+
+    def __len__(self):
+        return len(self.frame_ids)
+
+    def load_frame(self, index):
+        frame_id = self.frame_ids[index]
+
+        rgb_path = self.rgb_dir / f"{frame_id}.jpg"
+        depth_path = self.depth_dir / f"{frame_id}.png"
+
+        rgb = np.asarray(
+            Image.open(rgb_path).convert("RGB")
+        )
+
+        depth_raw = np.asarray(
+            Image.open(depth_path)
+        )
+
+        depth = (
+            depth_raw.astype(np.float32)
+            / DEPTH_SCALE
+        )
+
+        valid = (
+            np.isfinite(depth)
+            & (depth >= self.min_depth)
+            & (depth <= self.max_depth)
+        )
+
+        return {
+            "frame_id": frame_id,
+            "rgb": rgb,
+            "depth": depth,
+            "valid_depth": valid,
+            # Production convention: use the absolute Replica
+            # camera-to-world pose Ti. `poses_c2w` remains available
+            # separately for compatibility with earlier workflows.
+            "pose_c2w": self.poses_raw[index],
+            "intrinsics": DEFAULT_K.copy(),
+        }
+
+    def sample_valid_pixels(
+        self,
+        index,
+        max_pixels=400,
+        seed=42,
+    ):
+        """
+        Deterministic valid-depth pixel sampling.
+
+        The random generator is seeded with:
+            seed + frame_index
+        """
+        frame = self.load_frame(index)
+
+        ys, xs = np.where(frame["valid_depth"])
+
+        if len(xs) <= max_pixels:
+            selected = np.arange(len(xs))
+        else:
+            rng = np.random.default_rng(seed + index)
+            selected = rng.choice(
+                len(xs),
+                size=max_pixels,
+                replace=False,
+            )
+
+        ys = ys[selected]
+        xs = xs[selected]
+
+        depths = frame["depth"][ys, xs]
+
+        return xs, ys, depths
+
+    def pixels_to_world(
+        self,
+        xs,
+        ys,
+        depths,
+        index,
+    ):
+        frame = self.load_frame(index)
+
+        K = frame["intrinsics"]
+        K_inv = np.linalg.inv(K)
+        T_c2w = frame["pose_c2w"]
+
+        pixels = np.stack(
+            [
+                xs.astype(np.float64),
+                ys.astype(np.float64),
+                np.ones_like(xs, dtype=np.float64),
+            ],
+            axis=0,
+        )
+
+        xyz_camera = (
+            K_inv @ pixels
+        ) * depths[None, :]
+
+        xyz_camera_h = np.concatenate(
+            [
+                xyz_camera,
+                np.ones(
+                    (1, xyz_camera.shape[1]),
+                    dtype=np.float64,
+                ),
+            ],
+            axis=0,
+        )
+
+        xyz_world_h = T_c2w @ xyz_camera_h
+
+        xyz_world = xyz_world_h[:3].T
+
+        return xyz_world.astype(
+            np.float32,
+            copy=False,
+        )
+
+    def pixel_samples_to_world(
+        self,
+        index,
+        max_pixels=400,
+        seed=42,
+    ):
+        xs, ys, depths = self.sample_valid_pixels(
+            index=index,
+            max_pixels=max_pixels,
+            seed=seed,
+        )
+
+        xyz_world = self.pixels_to_world(
+            xs=xs,
+            ys=ys,
+            depths=depths,
+            index=index,
+        )
+
+        return xyz_world

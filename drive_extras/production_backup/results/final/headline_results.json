@@ -1,0 +1,101 @@
+[
+  {
+    "scene": "office0",
+    "condition": "F1",
+    "num_voxels": 36793,
+    "num_valid_gt": 5477,
+    "num_ignored_gt": 31316,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.15501186781084536,
+    "miou": 0.06168802268625282
+  },
+  {
+    "scene": "office0",
+    "condition": "F2",
+    "num_voxels": 36793,
+    "num_valid_gt": 5477,
+    "num_ignored_gt": 31316,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.15775059339054226,
+    "miou": 0.06262299568293198
+  },
+  {
+    "scene": "office0",
+    "condition": "F3",
+    "num_voxels": 36793,
+    "num_valid_gt": 5477,
+    "num_ignored_gt": 31316,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.23425232791674275,
+    "miou": 0.056067888491820435
+  },
+  {
+    "scene": "office2",
+    "condition": "F1",
+    "num_voxels": 52057,
+    "num_valid_gt": 4683,
+    "num_ignored_gt": 47374,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.39440529575058725,
+    "miou": 0.05704496390618872
+  },
+  {
+    "scene": "office2",
+    "condition": "F2",
+    "num_voxels": 52057,
+    "num_valid_gt": 4683,
+    "num_ignored_gt": 47374,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.3961136023916293,
+    "miou": 0.057453451141640105
+  },
+  {
+    "scene": "office2",
+    "condition": "F3",
+    "num_voxels": 52057,
+    "num_valid_gt": 4683,
+    "num_ignored_gt": 47374,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.40614990390775146,
+    "miou": 0.052747628166123224
+  },
+  {
+    "scene": "room0",
+    "condition": "F1",
+    "num_voxels": 62641,
+    "num_valid_gt": 6585,
+    "num_ignored_gt": 56056,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.26590736522399394,
+    "miou": 0.07803021476650272
+  },
+  {
+    "scene": "room0",
+    "condition": "F2",
+    "num_voxels": 62641,
+    "num_valid_gt": 6585,
+    "num_ignored_gt": 56056,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.2669703872437358,
+    "miou": 0.07891952168660754
+  },
+  {
+    "scene": "room0",
+    "condition": "F3",
+    "num_voxels": 62641,
+    "num_valid_gt": 6585,
+    "num_ignored_gt": 56056,
+    "feature_dim": 768,
+    "num_classes": 101,
+    "accuracy": 0.3254365983295368,
+    "miou": 0.0723913804089053
+  }
+]

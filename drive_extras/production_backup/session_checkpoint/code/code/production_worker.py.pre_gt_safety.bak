@@ -1,0 +1,757 @@
+
+"""
+Production extraction worker for the Replica contribution experiment.
+
+Checkpoint model
+---------------
+Each frame is processed independently.
+
+A successful frame produces:
+    cache/<scene>/frames/<frame_id>.npz
+
+The manifest is updated only after the frame artifact has been
+successfully written and reopened/validated.
+
+If the runtime disconnects:
+    - completed frame artifacts remain on Drive
+    - the manifest retains completed frame IDs
+    - a subsequent run skips completed frames
+    - failed/incomplete frames can be retried
+
+This worker intentionally does NOT compute final RQ1/RQ2 metrics.
+It produces the persistent observation cache required by the
+downstream fusion and evaluation stages.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+import os
+import tempfile
+import traceback
+from datetime import datetime, timezone
+from pathlib import Path
+
+import numpy as np
+
+
+# ---------------------------------------------------------------------
+# Persistent paths
+# ---------------------------------------------------------------------
+
+DRIVE = Path("/content/drive/MyDrive/research_project")
+
+CONTRIB = DRIVE / "contrib"
+CACHE = CONTRIB / "cache"
+RESULTS = CONTRIB / "results"
+
+CONFIG_PATH = CONTRIB / "config.json"
+
+
+# ---------------------------------------------------------------------
+# Utility functions
+# ---------------------------------------------------------------------
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
+def atomic_json_write(path: Path, obj: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    fd, tmp_name = tempfile.mkstemp(
+        prefix=path.name + ".",
+        suffix=".tmp",
+        dir=str(path.parent),
+    )
+
+    try:
+        with os.fdopen(fd, "w") as f:
+            json.dump(obj, f, indent=2)
+            f.flush()
+            os.fsync(f.fileno())
+
+        os.replace(tmp_name, path)
+
+    finally:
+        if os.path.exists(tmp_name):
+            os.unlink(tmp_name)
+
+
+def atomic_npz_write(path: Path, arrays: dict) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+
+    tmp_path = path.with_suffix(".tmp.npz")
+
+    if tmp_path.exists():
+        tmp_path.unlink()
+
+    np.savez_compressed(tmp_path, **arrays)
+
+    # Reopen before commit so corruption is detected before
+    # the artifact becomes the official checkpoint.
+    with np.load(tmp_path, allow_pickle=False) as z:
+        for key in arrays:
+            if key not in z:
+                raise RuntimeError(
+                    f"Checkpoint validation failed: missing key {key}"
+                )
+
+            if z[key].shape != arrays[key].shape:
+                raise RuntimeError(
+                    f"Checkpoint validation failed for {key}: "
+                    f"{z[key].shape} != {arrays[key].shape}"
+                )
+
+    os.replace(tmp_path, path)
+
+
+def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:
+    h = hashlib.sha256()
+
+    with open(path, "rb") as f:
+        while True:
+            chunk = f.read(chunk_size)
+            if not chunk:
+                break
+            h.update(chunk)
+
+    return h.hexdigest()
+
+
+# ---------------------------------------------------------------------
+# Configuration
+# ---------------------------------------------------------------------
+
+def load_config() -> dict:
+    if not CONFIG_PATH.exists():
+        raise FileNotFoundError(CONFIG_PATH)
+
+    with open(CONFIG_PATH) as f:
+        return json.load(f)
+
+
+def scene_config(config: dict, scene: str) -> dict:
+    data = config["data"]
+    contribution = config["contribution"]
+    sam = config["sam"]
+    openclip = config["openclip"]
+
+    return {
+        "scene": scene,
+        "dataset_root": data["root"],
+        "frame_stride": contribution["frame_stride"],
+        "voxel_size": contribution["voxel_size"],
+        "max_depth": contribution["max_depth"],
+        "min_depth": contribution["min_depth"],
+        "max_pixels_per_mask": contribution["max_pixels_per_mask"],
+        "min_mask_area": contribution["min_mask_area"],
+        "seed": contribution["seed"],
+        "sam": sam,
+        "openclip": openclip,
+    }
+
+
+# ---------------------------------------------------------------------
+# Manifest
+# ---------------------------------------------------------------------
+
+def manifest_path(scene: str) -> Path:
+    return CACHE / scene / "manifest.json"
+
+
+def frame_dir(scene: str) -> Path:
+    return CACHE / scene / "frames"
+
+
+def load_or_create_manifest(
+    scene: str,
+    scheduled_frames: list[int],
+    cfg: dict,
+) -> dict:
+
+    path = manifest_path(scene)
+
+    if path.exists():
+        with open(path) as f:
+            manifest = json.load(f)
+
+        # Never silently change the experiment definition of an
+        # existing production run.
+        if manifest["scene"] != scene:
+            raise RuntimeError("Manifest scene mismatch")
+
+        if manifest["scheduled_frames"] != scheduled_frames:
+            raise RuntimeError(
+                "Scheduled frame list differs from existing manifest"
+            )
+
+        return manifest
+
+    manifest = {
+        "scene": scene,
+        "created_at_utc": utc_now(),
+        "updated_at_utc": utc_now(),
+
+        "status": "initialized",
+
+        "scheduled_frames": scheduled_frames,
+
+        "completed_frames": [],
+        "failed_frames": {},
+
+        "frame_stride": cfg["frame_stride"],
+        "voxel_size": cfg["voxel_size"],
+        "min_depth": cfg["min_depth"],
+        "max_depth": cfg["max_depth"],
+        "max_pixels_per_mask": cfg["max_pixels_per_mask"],
+        "min_mask_area": cfg["min_mask_area"],
+
+        "sam": cfg["sam"],
+        "openclip": cfg["openclip"],
+
+        "checkpoint_policy": {
+            "per_frame": True,
+            "atomic_artifacts": True,
+            "skip_completed": True,
+            "retry_failed": True,
+        },
+    }
+
+    atomic_json_write(path, manifest)
+
+    return manifest
+
+
+def update_manifest(scene: str, manifest: dict) -> None:
+    manifest["updated_at_utc"] = utc_now()
+
+    completed = sorted(set(manifest["completed_frames"]))
+
+    manifest["completed_frames"] = completed
+
+    scheduled = set(manifest["scheduled_frames"])
+    done = set(completed)
+
+    if done == scheduled:
+        manifest["status"] = "complete"
+    elif len(done) > 0:
+        manifest["status"] = "in_progress"
+    else:
+        manifest["status"] = "initialized"
+
+    atomic_json_write(manifest_path(scene), manifest)
+
+
+# ---------------------------------------------------------------------
+# Frame artifact validation
+# ---------------------------------------------------------------------
+
+REQUIRED_FRAME_KEYS = [
+    "frame_id",
+    "voxel_keys",
+    "features",
+    "confidences",
+    "semantic_labels",
+]
+
+
+def validate_frame_artifact(path: Path) -> bool:
+    if not path.exists():
+        return False
+
+    try:
+        with np.load(path, allow_pickle=False) as z:
+
+            for key in REQUIRED_FRAME_KEYS:
+                if key not in z:
+                    return False
+
+            voxel_keys = z["voxel_keys"]
+            features = z["features"]
+            confidences = z["confidences"]
+            semantic_labels = z["semantic_labels"]
+
+            if voxel_keys.ndim != 2:
+                return False
+
+            if features.ndim != 2:
+                return False
+
+            if features.shape[1] != 768:
+                return False
+
+            n = features.shape[0]
+
+            if voxel_keys.shape[0] != n:
+                return False
+
+            if confidences.shape[0] != n:
+                return False
+
+            if semantic_labels.shape[0] != n:
+                return False
+
+            if not np.isfinite(features).all():
+                return False
+
+            if not np.isfinite(confidences).all():
+                return False
+
+            return True
+
+    except Exception:
+        return False
+
+
+# ---------------------------------------------------------------------
+# Production frame processing
+# ---------------------------------------------------------------------
+
+def process_frame(
+    frame_id: int,
+    loader,
+    mask_generator,
+    clip_model,
+    clip_preprocess,
+    device,
+    scene: str,
+    cfg: dict,
+    gt_provider=None,
+) -> dict:
+
+    """
+    Process exactly one frame.
+
+    IMPORTANT:
+    This function is intentionally isolated from the manifest logic.
+    A frame is considered successful only after its complete artifact
+    has been written and validated.
+
+    Expected observation-level outputs:
+
+        voxel_keys       : integer voxel coordinates
+        features         : normalized CLIP features, D=768
+        confidences      : SAM predicted_iou confidence
+        semantic_labels  : GT semantic class IDs, -1 for invalid/ignored
+
+    gt_provider must implement the project-approved Replica semantic
+    GT lifting geometry. No alternate pose convention is permitted.
+    """
+
+    import torch
+    from PIL import Image
+
+    frame = loader.load_frame(frame_id)
+
+    rgb = frame["rgb"]
+    depth = frame["depth"]
+    pose_c2w = frame["pose_c2w"]
+
+    # --------------------------------------------------------------
+    # SAM
+    # --------------------------------------------------------------
+
+    sam_output = mask_generator.generate(rgb)
+
+    valid_masks = []
+
+    for m in sam_output:
+
+        area = int(m["area"])
+
+        if area < cfg["min_mask_area"]:
+            continue
+
+        if "predicted_iou" not in m:
+            raise RuntimeError(
+                "SAM output missing predicted_iou"
+            )
+
+        valid_masks.append(m)
+
+    if len(valid_masks) == 0:
+        raise RuntimeError(
+            f"Frame {frame_id}: SAM produced zero valid masks"
+        )
+
+    # --------------------------------------------------------------
+    # Crop preparation
+    # --------------------------------------------------------------
+
+    crops = []
+    mask_confidences = []
+    mask_pixels = []
+
+    H, W = depth.shape
+
+    rng = np.random.default_rng(
+        cfg["seed"] + int(frame_id)
+    )
+
+    for m in valid_masks:
+
+        ys, xs = np.where(m["segmentation"])
+
+        if len(xs) == 0:
+            continue
+
+        if len(xs) > cfg["max_pixels_per_mask"]:
+            keep = rng.choice(
+                len(xs),
+                size=cfg["max_pixels_per_mask"],
+                replace=False,
+            )
+            xs = xs[keep]
+            ys = ys[keep]
+
+        x0 = max(0, int(xs.min()))
+        x1 = min(W - 1, int(xs.max()))
+        y0 = max(0, int(ys.min()))
+        y1 = min(H - 1, int(ys.max()))
+
+        crop = rgb[y0:y1 + 1, x0:x1 + 1]
+
+        if crop.size == 0:
+            continue
+
+        crops.append(Image.fromarray(crop))
+        mask_confidences.append(
+            float(m["predicted_iou"])
+        )
+        mask_pixels.append(
+            (xs.astype(np.int32), ys.astype(np.int32))
+        )
+
+    if len(crops) == 0:
+        raise RuntimeError(
+            f"Frame {frame_id}: no usable mask crops"
+        )
+
+    # --------------------------------------------------------------
+    # OpenCLIP
+    # --------------------------------------------------------------
+
+    clip_features = []
+
+    with torch.inference_mode():
+
+        for start in range(0, len(crops), 32):
+
+            batch = crops[start:start + 32]
+
+            x = torch.stack([
+                clip_preprocess(im)
+                for im in batch
+            ]).to(device)
+
+            f = clip_model.encode_image(x)
+
+            f = f / f.norm(
+                dim=-1,
+                keepdim=True
+            ).clamp_min(1e-8)
+
+            clip_features.append(
+                f.detach().cpu().float().numpy()
+            )
+
+    clip_features = np.concatenate(
+        clip_features,
+        axis=0
+    )
+
+    confidences = np.asarray(
+        mask_confidences,
+        dtype=np.float32
+    )
+
+    # --------------------------------------------------------------
+    # Pixel -> world -> voxel
+    # --------------------------------------------------------------
+
+    all_voxel_keys = []
+    all_features = []
+    all_confidences = []
+    all_labels = []
+
+    K = loader.K
+
+    for i, ((xs, ys), feat, conf) in enumerate(
+        zip(mask_pixels, clip_features, confidences)
+    ):
+
+        z = depth[ys, xs].astype(np.float32)
+
+        valid = (
+            np.isfinite(z)
+            & (z >= cfg["min_depth"])
+            & (z <= cfg["max_depth"])
+        )
+
+        if not np.any(valid):
+            continue
+
+        xs_v = xs[valid].astype(np.float64)
+        ys_v = ys[valid].astype(np.float64)
+        z_v = z[valid].astype(np.float64)
+
+        x = (
+            (xs_v - K[0, 2])
+            * z_v
+            / K[0, 0]
+        )
+
+        y = (
+            (ys_v - K[1, 2])
+            * z_v
+            / K[1, 1]
+        )
+
+        cam = np.stack(
+            [x, y, z_v],
+            axis=1
+        )
+
+        cam_h = np.concatenate(
+            [
+                cam,
+                np.ones(
+                    (cam.shape[0], 1),
+                    dtype=np.float64
+                )
+            ],
+            axis=1
+        )
+
+        world = (
+            pose_c2w.astype(np.float64)
+            @ cam_h.T
+        )[:3].T
+
+        voxel = np.round(
+            world / cfg["voxel_size"]
+        ).astype(np.int32)
+
+        if gt_provider is None:
+            labels = np.full(
+                voxel.shape[0],
+                -1,
+                dtype=np.int32
+            )
+        else:
+            labels = gt_provider(
+                frame_id=frame_id,
+                pixel_x=xs_v,
+                pixel_y=ys_v,
+                depth=z_v,
+                world_xyz=world,
+            ).astype(np.int32)
+
+        all_voxel_keys.append(voxel)
+        all_features.append(
+            np.repeat(
+                feat[None, :],
+                voxel.shape[0],
+                axis=0
+            ).astype(np.float32)
+        )
+        all_confidences.append(
+            np.full(
+                voxel.shape[0],
+                conf,
+                dtype=np.float32
+            )
+        )
+        all_labels.append(labels)
+
+    if len(all_voxel_keys) == 0:
+        raise RuntimeError(
+            f"Frame {frame_id}: zero valid depth observations"
+        )
+
+    voxel_keys = np.concatenate(all_voxel_keys)
+    features = np.concatenate(all_features)
+    obs_confidences = np.concatenate(all_confidences)
+    semantic_labels = np.concatenate(all_labels)
+
+    return {
+        "frame_id": np.asarray(
+            [frame_id],
+            dtype=np.int32
+        ),
+        "voxel_keys": voxel_keys,
+        "features": features,
+        "confidences": obs_confidences,
+        "semantic_labels": semantic_labels,
+    }
+
+
+# ---------------------------------------------------------------------
+# Worker entry point
+# ---------------------------------------------------------------------
+
+def run_scene(
+    scene: str,
+    loader,
+    mask_generator,
+    clip_model,
+    clip_preprocess,
+    device,
+    gt_provider=None,
+) -> dict:
+
+    config = load_config()
+
+    cfg = scene_config(config, scene)
+
+    frame_ids = loader.frame_ids[
+        ::cfg["frame_stride"]
+    ]
+
+    frame_ids = [
+        int(x) for x in frame_ids
+    ]
+
+    manifest = load_or_create_manifest(
+        scene,
+        frame_ids,
+        cfg,
+    )
+
+    out_dir = frame_dir(scene)
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    completed = set(
+        manifest["completed_frames"]
+    )
+
+    print(
+        f"Scene {scene}: "
+        f"{len(frame_ids)} scheduled frames"
+    )
+
+    print(
+        f"Already completed: "
+        f"{len(completed)}"
+    )
+
+    for frame_id in frame_ids:
+
+        artifact = (
+            out_dir /
+            f"{frame_id:06d}.npz"
+        )
+
+        # ----------------------------------------------------------
+        # Resume checkpoint
+        # ----------------------------------------------------------
+
+        if (
+            frame_id in completed
+            and validate_frame_artifact(artifact)
+        ):
+            print(
+                f"[SKIP] {frame_id:06d} "
+                "(checkpoint valid)"
+            )
+            continue
+
+        # If manifest says completed but artifact is corrupt,
+        # remove the stale completion marker and recompute.
+        if frame_id in completed:
+            completed.remove(frame_id)
+            manifest["completed_frames"] = sorted(completed)
+            update_manifest(scene, manifest)
+
+        # ----------------------------------------------------------
+        # Process frame
+        # ----------------------------------------------------------
+
+        manifest["status"] = "in_progress"
+        update_manifest(scene, manifest)
+
+        print(
+            f"[RUN ] {frame_id:06d}"
+        )
+
+        try:
+
+            arrays = process_frame(
+                frame_id=frame_id,
+                loader=loader,
+                mask_generator=mask_generator,
+                clip_model=clip_model,
+                clip_preprocess=clip_preprocess,
+                device=device,
+                scene=scene,
+                cfg=cfg,
+                gt_provider=gt_provider,
+            )
+
+            atomic_npz_write(
+                artifact,
+                arrays,
+            )
+
+            if not validate_frame_artifact(
+                artifact
+            ):
+                raise RuntimeError(
+                    "Post-write checkpoint validation failed"
+                )
+
+            completed.add(frame_id)
+
+            manifest["completed_frames"] = sorted(
+                completed
+            )
+
+            manifest["failed_frames"].pop(
+                str(frame_id),
+                None
+            )
+
+            update_manifest(
+                scene,
+                manifest,
+            )
+
+            print(
+                f"[DONE] {frame_id:06d} "
+                f"observations="
+                f"{arrays['voxel_keys'].shape[0]}"
+            )
+
+        except Exception as exc:
+
+            manifest["failed_frames"][
+                str(frame_id)
+            ] = {
+                "time_utc": utc_now(),
+                "error": repr(exc),
+                "traceback": traceback.format_exc(),
+            }
+
+            update_manifest(
+                scene,
+                manifest,
+            )
+
+            print(
+                f"[FAIL] {frame_id:06d}: "
+                f"{exc}"
+            )
+
+            # Continue to the next frame. The failed frame remains
+            # explicitly recorded and can be retried later.
+
+    if set(manifest["completed_frames"]) == set(frame_ids):
+        manifest["status"] = "complete"
+    else:
+        manifest["status"] = "incomplete"
+
+    update_manifest(scene, manifest)
+
+    return manifest

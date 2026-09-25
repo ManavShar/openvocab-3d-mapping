@@ -1,0 +1,28 @@
+{
+  "scenes": [
+    "office0",
+    "office2",
+    "room0"
+  ],
+  "scene_statistics": {
+    "office0": {
+      "frames": 200,
+      "observations": 6265279
+    },
+    "office2": {
+      "frames": 200,
+      "observations": 5276701
+    },
+    "room0": {
+      "frames": 200,
+      "observations": 6620736
+    }
+  },
+  "total_observations": 18162716,
+  "feature_dimension": 768,
+  "feature_dtype": "float32",
+  "confidence_dtype": "float32",
+  "semantic_label_dtype": "int32",
+  "estimated_raw_size_gb": 52.30225424468517,
+  "source": "/content/drive/MyDrive/research_project/production_backup/cache"
+}

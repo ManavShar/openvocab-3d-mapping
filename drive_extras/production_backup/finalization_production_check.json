@@ -1,0 +1,20 @@
+{
+  "office0": {
+    "frames": 200,
+    "observations": 6265279,
+    "valid_gt_observations": 5630893,
+    "ignored_gt_observations": 634386
+  },
+  "office2": {
+    "frames": 200,
+    "observations": 5276701,
+    "valid_gt_observations": 4879598,
+    "ignored_gt_observations": 397103
+  },
+  "room0": {
+    "frames": 200,
+    "observations": 6620736,
+    "valid_gt_observations": 6053350,
+    "ignored_gt_observations": 567386
+  }
+}
