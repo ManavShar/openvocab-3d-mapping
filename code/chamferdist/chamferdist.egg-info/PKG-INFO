@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: chamferdist
+Version: 1.0.3
+Summary: Pytorch Chamfer distance
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Dynamic: description
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: summary
+
+A pytorch module to compute Chamfer distance                     between two point sets (pointclouds).

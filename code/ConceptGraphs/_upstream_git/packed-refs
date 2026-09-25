@@ -1,0 +1,8 @@
+# pack-refs with: peeled fully-peeled sorted 
+72f5962822b5e8678a446f367a06df1a977d2a4d refs/remotes/origin/ali-dev
+36fd5fb25da4e7ff0d0a3e4e04f0470c0a190d47 refs/remotes/origin/ali-dev-patch-1
+a13fb6ea0b3fdff891b0e33aaf8b972a0cabeb29 refs/remotes/origin/ali_dev_new
+93277a02bd89171f8121e84203121cf7af9ebb5d refs/remotes/origin/main
+9cf444cd62db0253e0bf7c53631bc5d70ed13a9a refs/remotes/origin/qiao-dev
+75e3ad5e0a6251ab1b2f74aa1acbb9b92ac8a50d refs/remotes/origin/query
+6050115ff25b69df9d303bbc8c5cd3455f8bb1d1 refs/remotes/origin/sacha-dev

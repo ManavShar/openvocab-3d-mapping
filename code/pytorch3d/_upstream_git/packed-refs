@@ -1,0 +1,31 @@
+# pack-refs with: peeled fully-peeled sorted 
+c9a23bb8325f2d1db013d5f9729a53cd984657eb refs/remotes/origin/bottler-patch-1
+9c586b1351df48a5e36461475bfb2d9ab961d749 refs/remotes/origin/bottler/actions
+62a2031dd4456b4b0cae2caa24e950c221eddc58 refs/remotes/origin/bottler/un_auto
+e7c1f026ea88c5e95f3b9f6af0f3cd5c2deee799 refs/remotes/origin/classner-patch-pulsar-debug
+0eac8299d470a277d5331aec850a41fb4f543ae6 refs/remotes/origin/export-D58685326
+252d194b7cd43b1d32c78e8b1244a8363800a193 refs/remotes/origin/gh-pages
+0a7d4c1a171e8b768c63f15b17564f9ad495f49b refs/remotes/origin/main
+3fc3ea507bfbf7e1c2d5023a6db202698206f91d refs/remotes/origin/v0.6
+75ebeeaea0908c5527e7b1e305fbc7681382db47 refs/tags/V0.7.8
+75ebeeaea0908c5527e7b1e305fbc7681382db47 refs/tags/stable
+832a7709ac012c11aeb4e53dba282013709e6020 refs/tags/v0.1.0
+^dbf06b504b525c7f6680c5709b63df6413616d2e
+cf8e667b614d82194cf2c806ace87473b7d807ac refs/tags/v0.1.1
+686c8666d31d932ed42d3cd7319f249fc75e89a9 refs/tags/v0.2.0
+701bbef4f34001c47ec2631ffd20d30d8fc241ea refs/tags/v0.2.5
+18ce14cd31a2f1c99e16d727e1755156c360453a refs/tags/v0.3.0
+3c15a6c2469249c8b90a4f3e41e34350b8051b92 refs/tags/v0.4.0
+4046677cf1f8a6e5e9f9e8ef43e5c25200183c64 refs/tags/v0.5.0
+9585a58d10cb2efcd159b058fa4af914203c1d0d refs/tags/v0.6.0
+d049cd2e0102a6b2e08bf2b595131d5177638081 refs/tags/v0.6.1
+2bd65027ca5c3b87b77d4f05b8eacae58d8d106f refs/tags/v0.6.2
+276c9a8acbfa715f5802f26ec9f4141bde26ecb4 refs/tags/v0.7.0
+995b60e3b99faa1ee1bcdbe244426d54d98a7242 refs/tags/v0.7.1
+3145dd4d16edaceb394838364b8e87a440f83c10 refs/tags/v0.7.2
+e245560abb8f019a24880faf7557ed3b2eec6cc0 refs/tags/v0.7.3
+297020a4b1d7492190cb4a909cafbd2c81a12cb5 refs/tags/v0.7.4
+2f11ddc5ee7d6bd56f2fb6744a16776fab6536f7 refs/tags/v0.7.5
+f34104cf6ebefacd7b7e07955ee7aaa823e616ac refs/tags/v0.7.6
+89653419d0973396f3eff1a381ba09a07fffc2ed refs/tags/v0.7.7
+33824be3cbc87a7dd1db0f6a9a9de9ac81b2d0ba refs/tags/v0.7.9

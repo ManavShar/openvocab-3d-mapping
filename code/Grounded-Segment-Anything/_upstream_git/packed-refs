@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+ddfdbbda4bcf9be754257d6c264d414df79be35b refs/remotes/origin/add_groundingdino_config
+56cb2b7e4fab187d4a395a777657dab7f11d15e3 refs/remotes/origin/add_llava
+7ac84fa292fa6b7d8fe4cf2a7ba1fbb7b8162181 refs/remotes/origin/add_notebook
+22a2de51ba02a41d4ad7e0cd646616a61885c326 refs/remotes/origin/humanFace
+126abe633ffe333e16e4a0a4e946bc1003caf757 refs/remotes/origin/main
