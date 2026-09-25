@@ -1,0 +1,28 @@
+PROJECT CHECKPOINT
+Date: 2026-09-13
+
+Phase 0: COMPLETE
+Phase 1: COMPLETE
+Phase 2: COMPLETE
+Phase 3: COMPLETE
+Phase 4: COMPLETE for ConceptGraphs room0
+Phase 5: PENDING — own pipeline not yet defined
+Phase 6: PENDING
+Phase 7: PENDING
+Phase 8: PENDING
+Phase 9: PENDING
+Phase 10: PENDING
+
+Latest completed experiment:
+ConceptGraphs room0 mapping
+
+Runtime:
+10m 43s
+
+Final archived artifacts:
+/content/drive/MyDrive/research_project/outputs/conceptgraphs_repro/room0/full_pcd_none_exp.pkl.gz
+/content/drive/MyDrive/research_project/outputs/conceptgraphs_repro/room0/full_pcd_none_exp_post.pkl.gz
+
+Checkpoint files:
+/content/drive/MyDrive/research_project/logs/session_checkpoints/PROJECT_PROGRESS_LATEST.md
+/content/drive/MyDrive/research_project/logs/session_checkpoints/checkpoint_manifest_latest.txt

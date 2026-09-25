@@ -1,0 +1,30 @@
+{
+  "scene": "office0",
+  "semantic_gt_scene": "office_0",
+  "frame_stride": 10,
+  "voxel_size_m": 0.05,
+  "min_depth_m": 0.1,
+  "max_depth_m": 8.0,
+  "max_pixels_per_mask": 400,
+  "min_mask_area": 400,
+  "clip_model": "ViT-L-14",
+  "clip_pretrained": "laion2b_s32b_b82k",
+  "feature_dim": 768,
+  "fusion_conditions": [
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "gt_candidate_k": 32,
+  "gt_surface_tolerance_m": 0.005,
+  "sampling_seed": 42,
+  "gt_policy": {
+    "valid_class_id": ">=0",
+    "invalid_class_id": "<0",
+    "missing_object_metadata": "IGNORE"
+  },
+  "sam_checkpoint": "/content/drive/MyDrive/research_project/code/Grounded-Segment-Anything/sam_vit_h_4b8939.pth",
+  "dataset_root": "/content/drive/MyDrive/research_project/datasets/replica",
+  "config_hash": "d1ca45cf4823dcea",
+  "sam_checkpoint_sha256": "a7bf3b02f3ebf1267aba913ff637d9a2d5c33d3173bb679e46d9f338c26f262e"
+}

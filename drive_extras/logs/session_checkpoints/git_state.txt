@@ -1,0 +1,101 @@
+
+======================================================================
+ConceptGraphs
+======================================================================
+STATUS:
+ M conceptgraph/dataset/dataconfigs/replica/replica.yaml
+
+HEAD: 93277a02bd89171f8121e84203121cf7af9ebb5d
+BRANCH: main
+
+======================================================================
+gradslam
+======================================================================
+STATUS:
+ M examples/dataconfigs/replica.yaml
+ M examples/dataconfigs/replica/replica.yaml
+
+HEAD: 59ca872e3d265ad09f63c4793d011fad67064452
+BRANCH: conceptfusion
+
+======================================================================
+chamferdist
+======================================================================
+STATUS:
+
+HEAD: ee753899b583bdc06bd2505dc162fd54ba0c6c5b
+BRANCH: master
+
+======================================================================
+Grounded-Segment-Anything
+======================================================================
+STATUS:
+ M segment_anything/linter.sh
+
+HEAD: a4d76a2b55e348943cba4cd57d7553c354296223
+BRANCH: (detached HEAD)
+
+======================================================================
+OpenFusion
+======================================================================
+STATUS:
+ M openfusion/state.py
+ M openfusion/zoo/xdecoder_seem/configs/seem/seem_focall_lang.yaml
+ M openfusion/zoo/xdecoder_seem/configs/seem/seem_focalt_lang.yaml
+ M openfusion/zoo/xdecoder_seem/model.py
+ M openfusion/zoo/xdecoder_seem/utils/Config.py
+ M openfusion/zoo/xdecoder_seem/utils/__init__.py
+ M openfusion/zoo/xdecoder_seem/utils/arguments.py
+ M openfusion/zoo/xdecoder_seem/utils/misc.py
+ M openfusion/zoo/xdecoder_seem/utils/model.py
+ M openfusion/zoo/xdecoder_seem/utils/model_loading.py
+ M openfusion/zoo/xdecoder_seem/utils/visualizer.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/architectures/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/architectures/build.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/architectures/registry.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/backbone/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/backbone/backbone.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/backbone/build.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/backbone/focal.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/backbone/focal_dw.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/backbone/registry.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/backbone/resnet.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/backbone/swin.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/build.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/decoder/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/decoder/build.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/decoder/registry.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/encoder/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/encoder/build.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/encoder/ops/make.sh
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/encoder/registry.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/encoder/transformer_encoder_fpn.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/registry.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/transformer_blocks.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/body/xdecoder_head.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/LangEncoder/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/LangEncoder/build.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/LangEncoder/registry.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/LangEncoder/transformer.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/build.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/fixvlpencoder.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/loss.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/misc.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/registry.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/language/vlpencoder.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/modules/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/modules/attention.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/modules/position_encoding.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/utils/__init__.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/utils/box_ops.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/utils/config.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/utils/it_contrastive.py
+ M openfusion/zoo/xdecoder_seem/xdecoder/utils/misc.py
+?? replica_office0/
+?? replica_room0/
+
+HEAD: 86bdc1ab173a203e7157ab055ff1fc96c786d86a
+BRANCH: main

@@ -1,0 +1,5 @@
+PATH=/opt/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/tools/node/bin:/tools/google-cloud-sdk/bin
+LD_LIBRARY_PATH=/usr/lib64-nvidia
+CC=/usr/bin/gcc-11
+CXX=/usr/bin/g++-11
+PYTHONPATH=/env/python

@@ -1,0 +1,18 @@
+{
+  "checkpoint_date": "2026-09-13",
+  "current_stage": "ConceptGraphs GSA complete; mapping next",
+  "conceptgraphs_gsa_room0": {
+    "status": "complete",
+    "processed_frames": 400,
+    "stride": 5,
+    "detections": 400,
+    "visualizations": 400,
+    "classes": [
+      "item"
+    ],
+    "runtime": "44:52"
+  },
+  "conceptgraphs_mapping": "not_started",
+  "openfusion_reproduction": "complete",
+  "next_step": "Run Hydra ConceptGraphs mapping command from PROJECT_PROGRESS.md"
+}

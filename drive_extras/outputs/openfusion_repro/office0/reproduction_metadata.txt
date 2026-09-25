@@ -1,0 +1,67 @@
+Open-Fusion Reproduction
+========================
+
+Repository:
+UARK-AICV/OpenFusion
+
+Commit:
+86bdc1ab173a203e7157ab055ff1fc96c786d86a
+
+Scene:
+Replica office0
+
+Algorithm:
+vlfusion
+
+Vision-language model:
+SEEM
+
+Frames:
+2000
+
+Device:
+cuda:0
+
+GPU:
+NVIDIA A100-SXM4-80GB
+
+PyTorch:
+2.0.1+cu117
+
+CUDA:
+11.7
+
+Python:
+3.10.20
+
+Official main.py execution:
+python main.py --algo vlfusion --vl seem --data replica --scene office0 --frames -1 --device cuda:0 --save
+
+Frame-loop time:
+121 seconds
+
+Total wall time:
+166 seconds
+
+Average frame-loop throughput:
+16.51 FPS
+
+Exit code:
+0
+
+Repository compatibility patch:
+Added `DBG = False` before the torchshow try/except in openfusion/state.py.
+Reason: when torchshow is unavailable, the repository's except block leaves DBG undefined,
+causing NameError during VLState.update().
+
+Environment-specific note:
+Open3D emitted headless X11/GLFW warnings during semantic visualization.
+These did not affect execution; process exited successfully with code 0.
+
+Expected artifacts:
+vlfusion.npz
+color_pc.ply
+color_mesh.ply
+color_mesh.glb
+semantic_pc.ply
+run.log

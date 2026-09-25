@@ -1,0 +1,59 @@
+{
+  "data": {
+    "root": "/content/drive/MyDrive/research_project/datasets/replica",
+    "scenes": [
+      "office0",
+      "office1",
+      "office2",
+      "office3",
+      "office4",
+      "room0",
+      "room1",
+      "room2"
+    ]
+  },
+  "contribution": {
+    "frame_stride": 10,
+    "voxel_size": 0.05,
+    "max_depth": 8.0,
+    "min_depth": 0.1,
+    "max_pixels_per_mask": 400,
+    "min_mask_area": 400,
+    "seed": 42
+  },
+  "sam": {
+    "model": "vit_h",
+    "checkpoint": "/content/drive/MyDrive/research_project/code/Grounded-Segment-Anything/sam_vit_h_4b8939.pth",
+    "points_per_side": 32,
+    "pred_iou_thresh": 0.86,
+    "stability_score_thresh": 0.92,
+    "min_mask_region_area": 400
+  },
+  "openclip": {
+    "model": "ViT-L-14",
+    "pretrained": "laion2b_s32b82k",
+    "feature_dim": 768,
+    "batch_size": 32
+  },
+  "fusion": [
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "rq2": {
+    "train_scenes": [
+      "office0",
+      "office1",
+      "office2",
+      "room0"
+    ],
+    "eval_scenes": [
+      "office3",
+      "office4",
+      "room1",
+      "room2"
+    ],
+    "heldout_fraction": 0.2,
+    "split_seed": 42
+  }
+}
