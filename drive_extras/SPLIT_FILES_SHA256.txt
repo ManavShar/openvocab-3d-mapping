@@ -1,3 +1,4 @@
+481efc46585cacb900a822160061b49616d6210241bdf2e83df6b3080d1b4e1f  code/OpenFusion/replica_office0/vlfusion.npz  (206478257 bytes, 3 chunks)
 481efc46585cacb900a822160061b49616d6210241bdf2e83df6b3080d1b4e1f  drive_extras/outputs/openfusion_repro/office0/vlfusion.npz  (206478257 bytes, 3 chunks)
 746596a5da6a9c2e48b70c0e8f2d730739170ee3036e5828d935f225f5edea46  drive_extras/production_backup/results/final/fusion/room0/F1.npz  (178546556 bytes, 2 chunks)
 746596a5da6a9c2e48b70c0e8f2d730739170ee3036e5828d935f225f5edea46  drive_extras/production_backup/results/fusion/room0/F1.npz  (178546556 bytes, 2 chunks)
@@ -21,5 +22,6 @@ bebdb21ddb4e5e9fe268115df3fad6095660d799ce24010220a8d88a65a296fd  drive_extras/p
 eddd2a266f83bc076655468eb004ad42ed5ccec6f039ad5e2b0c8136e34cf3fe  drive_extras/production_backup/results/final/fusion/office2/F1.npz  (148241242 bytes, 2 chunks)
 eddd2a266f83bc076655468eb004ad42ed5ccec6f039ad5e2b0c8136e34cf3fe  drive_extras/production_backup/results/fusion/office2/F1.npz  (148241242 bytes, 2 chunks)
 eddd2a266f83bc076655468eb004ad42ed5ccec6f039ad5e2b0c8136e34cf3fe  drive_extras/production_backup/session_checkpoint/results/fusion/office2/F1.npz  (148241242 bytes, 2 chunks)
+f2e29e463aff3c63f14afb8554243ae860853bf1cadecef0c73dc0f883b289a9  code/OpenFusion/replica_room0/vlfusion.npz  (327961105 bytes, 4 chunks)
 f2e29e463aff3c63f14afb8554243ae860853bf1cadecef0c73dc0f883b289a9  drive_extras/outputs/openfusion_repro/room0/vlfusion.npz  (327961105 bytes, 4 chunks)
 fe6cc9e60aba6d655510ffa98b607e86c3acc2aeef10df8efabc50eb148b939b  code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.pack  (243483692 bytes, 3 chunks)

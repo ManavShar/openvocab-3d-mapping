@@ -13,6 +13,8 @@ size, its status here and its path in this repo.
 - `drive_extras/logs`, `production_backup`, `contrib`, `outputs`: every file, including those over
   100MB (fusion `F*.npz` arrays, `vlfusion.npz`), stored as 90MiB chunks. Rebuild with
   `drive_extras/REASSEMBLE.md`; checksums are in `drive_extras/SPLIT_FILES_SHA256.txt`.
+- `drive_extras/datasets/` and `code/OpenFusion/replica_office0|replica_room0`: the non-image Replica
+  files (semantic ground-truth meshes, trajectories, ConceptGraphs RGB point clouds, meshes, metadata).
 - Three Git LFS files from the first commit: `groundingdino_swint_ogc.pth` (662MB),
   `seem_focall_v1.pt` (1.3GB) and `OpenFusion/assets/output.gif` (72MB).
 
@@ -30,18 +32,18 @@ They are standard pretrained weights (RAM, Tag2Text, SAM ViT-H) and can be re-do
 their original sources. They could be added by splitting into chunks under 100MB, but that would
 push the repo far past GitHub's recommended size, so they were left out.
 
-### Replica benchmark data (27,286 files, sizes not measured)
+### Replica benchmark images and the raw dataset (27,230 files, sizes not measured)
 
 Not downloaded, because it is public benchmark data and would exceed GitHub's recommended repo size:
 
-- `datasets/replica/` (office0-3, room0 RGB-D frames and trajectories), also linked at
-  `code/OpenFusion/sample/replica/` (same Drive files in two folders).
-- `datasets/replica_conceptgraphs/` (office0, room0 frames and trajectories).
-- `datasets/replica_v1_0/` (17-part `replica_v1_0.tar.gz`) and `replica_v1_0_recovery_manifest.json`.
-- `code/OpenFusion/replica_office0/`, `code/OpenFusion/replica_room0/` (meshes, `.npz`).
+- The RGB (`.jpg`) and depth (`.png`) frames under `datasets/replica/` (office0-3, room0),
+  also linked at `code/OpenFusion/sample/replica/` (the same Drive files in two folders), and under
+  `datasets/replica_conceptgraphs/` (office0, room0).
+- `datasets/replica_v1_0/` (17-part `replica_v1_0.tar.gz`).
 
-Small metadata in `datasets/` (`replica_semantic_gt/`, per-scene `.txt`/`.json`) is listed in
-`DRIVE_MANIFEST.csv` as `not-fetched` as well. It can be fetched on request.
+Everything else in those folders (ground-truth semantic meshes, trajectories, ConceptGraphs RGB
+point clouds, OpenFusion meshes, JSON/text metadata; 56 files) is in the repo under
+`drive_extras/datasets/` and `code/OpenFusion/replica_*`.
 
 ### Empty on Drive
 

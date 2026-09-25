@@ -1,0 +1,150 @@
+{
+  "source": "/content/drive/MyDrive/research_project/datasets/replica_v1_0/extracted",
+  "scenes": {
+    "office_0": {
+      "semantic.bin": {
+        "status": "complete",
+        "size": 4709984
+      },
+      "semantic.json": {
+        "status": "complete",
+        "size": 1324972
+      },
+      "habitat/info_semantic.json": {
+        "status": "complete",
+        "size": 56790
+      },
+      "habitat/mesh_semantic.ply": {
+        "status": "complete",
+        "size": 27103742
+      }
+    },
+    "office_1": {
+      "semantic.bin": {
+        "status": "complete",
+        "size": 3381472
+      },
+      "semantic.json": {
+        "status": "complete",
+        "size": 75175
+      },
+      "habitat/info_semantic.json": {
+        "status": "complete",
+        "size": 44894
+      },
+      "habitat/mesh_semantic.ply": {
+        "status": "complete",
+        "size": 19452680
+      }
+    },
+    "office_2": {
+      "semantic.bin": {
+        "status": "complete",
+        "size": 6862728
+      },
+      "semantic.json": {
+        "status": "complete",
+        "size": 105283
+      },
+      "habitat/info_semantic.json": {
+        "status": "complete",
+        "size": 76397
+      },
+      "habitat/mesh_semantic.ply": {
+        "status": "complete",
+        "size": 39482238
+      }
+    },
+    "office_3": {
+      "semantic.bin": {
+        "status": "complete",
+        "size": 9481744
+      },
+      "semantic.json": {
+        "status": "complete",
+        "size": 195724
+      },
+      "habitat/info_semantic.json": {
+        "status": "complete",
+        "size": 82836
+      },
+      "habitat/mesh_semantic.ply": {
+        "status": "complete",
+        "size": 54586992
+      }
+    },
+    "office_4": {
+      "semantic.bin": {
+        "status": "complete",
+        "size": 7943272
+      },
+      "semantic.json": {
+        "status": "complete",
+        "size": 134983
+      },
+      "habitat/info_semantic.json": {
+        "status": "complete",
+        "size": 57259
+      },
+      "habitat/mesh_semantic.ply": {
+        "status": "complete",
+        "size": 45676849
+      }
+    },
+    "room_0": {
+      "semantic.bin": {
+        "status": "complete",
+        "size": 7627728
+      },
+      "semantic.json": {
+        "status": "complete",
+        "size": 215102
+      },
+      "habitat/info_semantic.json": {
+        "status": "complete",
+        "size": 76790
+      },
+      "habitat/mesh_semantic.ply": {
+        "status": "complete",
+        "size": 43890939
+      }
+    },
+    "room_1": {
+      "semantic.bin": {
+        "status": "complete",
+        "size": 5158344
+      },
+      "semantic.json": {
+        "status": "complete",
+        "size": 151500
+      },
+      "habitat/info_semantic.json": {
+        "status": "complete",
+        "size": 49102
+      },
+      "habitat/mesh_semantic.ply": {
+        "status": "complete",
+        "size": 29685668
+      }
+    },
+    "room_2": {
+      "semantic.bin": {
+        "status": "complete",
+        "size": 5779184
+      },
+      "semantic.json": {
+        "status": "complete",
+        "size": 166400
+      },
+      "habitat/info_semantic.json": {
+        "status": "complete",
+        "size": 54008
+      },
+      "habitat/mesh_semantic.ply": {
+        "status": "complete",
+        "size": 33233316
+      }
+    }
+  },
+  "status": "complete"
+}

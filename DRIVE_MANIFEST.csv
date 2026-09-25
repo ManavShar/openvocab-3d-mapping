@@ -247,7 +247,7 @@ code/Grounded-Segment-Anything/_upstream_git/logs/HEAD,1s4J3VCTGxlrfDJaGIMhcNBgx
 code/Grounded-Segment-Anything/_upstream_git/logs/refs/heads/main,1yj9_3nN9fUfpsMH1wSDIw8MYIgUezCrZ,206,in-repo,code/Grounded-Segment-Anything/_upstream_git/logs/refs/heads/main
 code/Grounded-Segment-Anything/_upstream_git/logs/refs/remotes/origin/HEAD,1VU-R-fUitenh9OXHfjZ1Tsdj-L-XpK6s,206,in-repo,code/Grounded-Segment-Anything/_upstream_git/logs/refs/remotes/origin/HEAD
 code/Grounded-Segment-Anything/_upstream_git/objects/pack/pack-7643c3325f4aab5a5c976b4c8e7245c0d8f1ff31.idx,1dvGS5Yc8pHaLqjUEXiVW6tzQIpIhxwsW,51668,in-repo,code/Grounded-Segment-Anything/_upstream_git/objects/pack/pack-7643c3325f4aab5a5c976b4c8e7245c0d8f1ff31.idx
-code/Grounded-Segment-Anything/_upstream_git/objects/pack/pack-7643c3325f4aab5a5c976b4c8e7245c0d8f1ff31.pack,1cJLsaH7v1MG5bvEJJ5Zo1me0BU92zQiW,163402691,in-repo-split,code/Grounded-Segment-Anything/_upstream_git/objects/pack/pack-7643c3325f4aab5a5c976b4c8e7245c0d8f1ff31.pack.part000..(see REASSEMBLE.md)
+code/Grounded-Segment-Anything/_upstream_git/objects/pack/pack-7643c3325f4aab5a5c976b4c8e7245c0d8f1ff31.pack,1cJLsaH7v1MG5bvEJJ5Zo1me0BU92zQiW,163402691,in-repo-split,code/Grounded-Segment-Anything/_upstream_git/objects/pack/pack-7643c3325f4aab5a5c976b4c8e7245c0d8f1ff31.pack.part000.. (see REASSEMBLE.md)
 code/Grounded-Segment-Anything/_upstream_git/objects/pack/pack-7643c3325f4aab5a5c976b4c8e7245c0d8f1ff31.rev,14yplxxIIvB6_OfaqZtAoqtvSlmcoQjWa,7280,in-repo,code/Grounded-Segment-Anything/_upstream_git/objects/pack/pack-7643c3325f4aab5a5c976b4c8e7245c0d8f1ff31.rev
 code/Grounded-Segment-Anything/_upstream_git/packed-refs,1IwpfdbbYEW-kTtV17X2IPfDv29-RlNT-,414,in-repo,code/Grounded-Segment-Anything/_upstream_git/packed-refs
 code/Grounded-Segment-Anything/_upstream_git/refs/heads/main,1-XqrkaRpR_buH72xc77_0e6KuBlm68R4,41,in-repo,code/Grounded-Segment-Anything/_upstream_git/refs/heads/main
@@ -463,7 +463,7 @@ code/OpenFusion/_upstream_git/logs/HEAD,1fXQ8DCd2tCjsModaZ53XHMScWhkZy47E,187,in
 code/OpenFusion/_upstream_git/logs/refs/heads/main,1EYltHbJa5h78vgFaIMJgJZeR3irS7e7i,187,in-repo,code/OpenFusion/_upstream_git/logs/refs/heads/main
 code/OpenFusion/_upstream_git/logs/refs/remotes/origin/HEAD,1kmz14yURuSLWc4HNY_YWfuLWrYgwrz9Y,187,in-repo,code/OpenFusion/_upstream_git/logs/refs/remotes/origin/HEAD
 code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.idx,1VznpilZSA1gS7qUyygg8bzYKgK5JZ7vF,7372,in-repo,code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.idx
-code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.pack,109RHq9owSWLO060bwfGA1DEc96z_ECes,243483692,in-repo-split,code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.pack.part000..(see REASSEMBLE.md)
+code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.pack,109RHq9owSWLO060bwfGA1DEc96z_ECes,243483692,in-repo-split,code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.pack.part000.. (see REASSEMBLE.md)
 code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.rev,1WZV7BTY2FGzzOWhYtN9rwHIof7-xZ2wW,952,in-repo,code/OpenFusion/_upstream_git/objects/pack/pack-8b323667ffadaa9b8326a281d6c5a3687cdfb4f1.rev
 code/OpenFusion/_upstream_git/packed-refs,1sje2GDo4RZThxPhX4yb3F-FSfdDG_Pow,186,in-repo,code/OpenFusion/_upstream_git/packed-refs
 code/OpenFusion/_upstream_git/refs/heads/main,1ShSVeEdxwbGby-rtG1kRfiBusX48wUA-,41,in-repo,code/OpenFusion/_upstream_git/refs/heads/main
@@ -649,16 +649,16 @@ code/OpenFusion/openfusion/zoo/xdecoder_seem/xdecoder/utils/config.py,1fAlYIV24j
 code/OpenFusion/openfusion/zoo/xdecoder_seem/xdecoder/utils/it_contrastive.py,19HwHc0NEPj1CfpLKiXi9BYn89lIyiOJh,,in-repo,code/OpenFusion/openfusion/zoo/xdecoder_seem/xdecoder/utils/it_contrastive.py
 code/OpenFusion/openfusion/zoo/xdecoder_seem/xdecoder/utils/misc.py,1Rdrf4OLQMd1awyIM4iCYVn4zOuitwNmv,,in-repo,code/OpenFusion/openfusion/zoo/xdecoder_seem/xdecoder/utils/misc.py
 code/OpenFusion/query.py,18tqNaG2sbabZ4zKZnWac7a_DjkZW2l8t,,in-repo,code/OpenFusion/query.py
-code/OpenFusion/replica_office0/color_mesh.glb,1HZYMvXc-fE5EF3w-7V87kB4ax3M8cpqT,,not-fetched,
-code/OpenFusion/replica_office0/color_mesh.ply,13r190hW9-3ASKK4FWNQgydbTSjOMdZFP,,not-fetched,
-code/OpenFusion/replica_office0/color_pc.ply,1AjHRSjBOcsZDzBgk-B6nbtPouoDCiwPR,,not-fetched,
-code/OpenFusion/replica_office0/semantic_pc.ply,11HAgusaTdAxnes625Xw-ned8ZX9s7r9y,,not-fetched,
-code/OpenFusion/replica_office0/vlfusion.npz,1cl7_wpkBBtjLCGqEyVpmpUsKceq87KPl,,not-fetched,
-code/OpenFusion/replica_room0/color_mesh.glb,13xyPXS-kdEdkhNpHQ1YnRupLsBJnBzUX,,not-fetched,
-code/OpenFusion/replica_room0/color_mesh.ply,1IzUA4gOkXIJzXA-mRkJ0DMTyLiRulIat,,not-fetched,
-code/OpenFusion/replica_room0/color_pc.ply,13mtc-ibLH08F04LB058tl3WnWCUMAwK3,,not-fetched,
-code/OpenFusion/replica_room0/semantic_pc.ply,1qqaXF_lPSgUghYN3wB1QDJN4e4NuKgfE,,not-fetched,
-code/OpenFusion/replica_room0/vlfusion.npz,15HRTXFaYh5qcqybRy29ipQ54fpuUXBOi,,not-fetched,
+code/OpenFusion/replica_office0/color_mesh.glb,1HZYMvXc-fE5EF3w-7V87kB4ax3M8cpqT,41910868,in-repo,code/OpenFusion/replica_office0/color_mesh.glb
+code/OpenFusion/replica_office0/color_mesh.ply,13r190hW9-3ASKK4FWNQgydbTSjOMdZFP,40363244,in-repo,code/OpenFusion/replica_office0/color_mesh.ply
+code/OpenFusion/replica_office0/color_pc.ply,1AjHRSjBOcsZDzBgk-B6nbtPouoDCiwPR,14202938,in-repo,code/OpenFusion/replica_office0/color_pc.ply
+code/OpenFusion/replica_office0/semantic_pc.ply,11HAgusaTdAxnes625Xw-ned8ZX9s7r9y,13500209,in-repo,code/OpenFusion/replica_office0/semantic_pc.ply
+code/OpenFusion/replica_office0/vlfusion.npz,1cl7_wpkBBtjLCGqEyVpmpUsKceq87KPl,206478257,in-repo-split,code/OpenFusion/replica_office0/vlfusion.npz.part000.. (see REASSEMBLE.md)
+code/OpenFusion/replica_room0/color_mesh.glb,13xyPXS-kdEdkhNpHQ1YnRupLsBJnBzUX,69765124,in-repo,code/OpenFusion/replica_room0/color_mesh.glb
+code/OpenFusion/replica_room0/color_mesh.ply,1IzUA4gOkXIJzXA-mRkJ0DMTyLiRulIat,67185647,in-repo,code/OpenFusion/replica_room0/color_mesh.ply
+code/OpenFusion/replica_room0/color_pc.ply,13mtc-ibLH08F04LB058tl3WnWCUMAwK3,23635901,in-repo,code/OpenFusion/replica_room0/color_pc.ply
+code/OpenFusion/replica_room0/semantic_pc.ply,1qqaXF_lPSgUghYN3wB1QDJN4e4NuKgfE,13500209,in-repo,code/OpenFusion/replica_room0/semantic_pc.ply
+code/OpenFusion/replica_room0/vlfusion.npz,15HRTXFaYh5qcqybRy29ipQ54fpuUXBOi,327961105,in-repo-split,code/OpenFusion/replica_room0/vlfusion.npz.part000.. (see REASSEMBLE.md)
 code/OpenFusion/sample/replica/office0/depth/000000.png,1VvBDZ6CxhTqgGbrq8BICb3Cz2TbcpUzR,,not-fetched,
 code/OpenFusion/sample/replica/office0/depth/000001.png,1nmqX54ZHukyn01qxHY52dKBodC0_sD1S,,not-fetched,
 code/OpenFusion/sample/replica/office0/depth/000002.png,1muffm3Dxu1Li_J8d8FyYcEtrTSeTAd4S,,not-fetched,
@@ -4659,7 +4659,7 @@ code/OpenFusion/sample/replica/office0/rgb/001996.jpg,1-5Gg-JaWbvWqc8g_YC0pHzigR
 code/OpenFusion/sample/replica/office0/rgb/001997.jpg,1Nm3XXINPfZjp5B7eVH62DeG-EPU29EyY,,not-fetched,
 code/OpenFusion/sample/replica/office0/rgb/001998.jpg,1jwAg8U73-ByhdL9NqKoU1eN93G0YLkK5,,not-fetched,
 code/OpenFusion/sample/replica/office0/rgb/001999.jpg,145O8CBeEX8hC87nSoE5DX0phmAIvKA9V,,not-fetched,
-code/OpenFusion/sample/replica/office0/traj.txt,1hyQkqqzeztGc4gnApX4ZzB3CUqIQXxVe,,not-fetched,
+code/OpenFusion/sample/replica/office0/traj.txt,1hyQkqqzeztGc4gnApX4ZzB3CUqIQXxVe,812289,in-repo,drive_extras/datasets/replica/office0/traj.txt
 code/OpenFusion/sample/replica/office1/results/depth000000.png,1ROCMQUuqqR8gqTRIizgKQfZNhW3O4xbt,,not-fetched,
 code/OpenFusion/sample/replica/office1/results/depth000001.png,1Rb3nAcIObMPTwEF0NzDadiuqK3-yb8W9,,not-fetched,
 code/OpenFusion/sample/replica/office1/results/depth000002.png,1YclxmBG1xz2uGqdEhTxEdyNU6MMpT38o,,not-fetched,
@@ -8660,7 +8660,7 @@ code/OpenFusion/sample/replica/office1/results/frame001996.jpg,1kVxOIYL9X6y-ppd3
 code/OpenFusion/sample/replica/office1/results/frame001997.jpg,1ItZ1skJlfYgjq7r6ua5LucXojpz5bCzL,,not-fetched,
 code/OpenFusion/sample/replica/office1/results/frame001998.jpg,1lO1V_xK5Pu7npXdoBhOmIVJaqhXeWsrk,,not-fetched,
 code/OpenFusion/sample/replica/office1/results/frame001999.jpg,13j5mcd4hmSw93vjReKg9G4EITLgkD6Cr,,not-fetched,
-code/OpenFusion/sample/replica/office1/traj.txt,1c5q7qEM-ewc51rrb55kmCjGGZMwzYrh9,,not-fetched,
+code/OpenFusion/sample/replica/office1/traj.txt,1c5q7qEM-ewc51rrb55kmCjGGZMwzYrh9,809752,in-repo,drive_extras/datasets/replica/office1/traj.txt
 code/OpenFusion/sample/replica/office2/results/depth000000.png,1ghVcI4BpzznIn0yJl9C3M_I1BSI2bo4c,,not-fetched,
 code/OpenFusion/sample/replica/office2/results/depth000001.png,1nEnxqZ1V4nG5FTO1TQSqvCvaK0WpHO2L,,not-fetched,
 code/OpenFusion/sample/replica/office2/results/depth000002.png,1GSpvMNAf1HAKlMnSdmnHuYl2SDCnHRfg,,not-fetched,
@@ -12661,7 +12661,7 @@ code/OpenFusion/sample/replica/office2/results/frame001996.jpg,1iQWIAI9-yTwx_7bl
 code/OpenFusion/sample/replica/office2/results/frame001997.jpg,1Gv_h-ZPKuSTSA-iBjgSCfqcJxdURZfft,,not-fetched,
 code/OpenFusion/sample/replica/office2/results/frame001998.jpg,14fiXoR0PsBo2RBJEP1fXOdLYz1tGs0KN,,not-fetched,
 code/OpenFusion/sample/replica/office2/results/frame001999.jpg,1TToqhZdGfnEEz1sPUY_rHZaSFcf4o10u,,not-fetched,
-code/OpenFusion/sample/replica/office2/traj.txt,17KpWK1z8-NnZPOc3erXkuL7_3acDBNn-,,not-fetched,
+code/OpenFusion/sample/replica/office2/traj.txt,17KpWK1z8-NnZPOc3erXkuL7_3acDBNn-,812015,in-repo,drive_extras/datasets/replica/office2/traj.txt
 code/OpenFusion/sample/replica/office3/results/depth000000.png,1E8lNxWiix4Zmjj9PR1fYN5bO42kwbuvU,,not-fetched,
 code/OpenFusion/sample/replica/office3/results/depth000001.png,1t5gMwoSIIY05YTRc7anRODG273eCCWOz,,not-fetched,
 code/OpenFusion/sample/replica/office3/results/depth000003.png,1246K0yvOd7uMTfLXLUNQWrFi-kFP2KHF,,not-fetched,
@@ -19875,7 +19875,7 @@ code/OpenFusion/sample/replica/room0/rgb/001996.jpg,1esdeL_p4BsxkD603C947PCnddWU
 code/OpenFusion/sample/replica/room0/rgb/001997.jpg,1FmkxkMXzx3-YV0wKAplWWgl2RHQZth5Q,,not-fetched,
 code/OpenFusion/sample/replica/room0/rgb/001998.jpg,10caQATphcyEbZGGB5w19jLSxHU4izany,,not-fetched,
 code/OpenFusion/sample/replica/room0/rgb/001999.jpg,1LeAEjZ0MM-DGdEkFQXJz-5D4kFtnSGSf,,not-fetched,
-code/OpenFusion/sample/replica/room0/traj.txt,1idn9AnL1pL6ZwgPaicvNeOoP_DRkVQZb,,not-fetched,
+code/OpenFusion/sample/replica/room0/traj.txt,1idn9AnL1pL6ZwgPaicvNeOoP_DRkVQZb,811033,in-repo,drive_extras/datasets/replica/room0/traj.txt
 code/OpenFusion/setup.py,1Ft9yxd9XWt4_5IG5vurcveGNYjjuiMg8,,in-repo,code/OpenFusion/setup.py
 code/OpenFusion/tools/download.sh,1iFIlxn1e_anoAk1_E93ByPOE7rW1M_ZC,,in-repo,code/OpenFusion/tools/download.sh
 code/OpenFusion/tools/prepare_scene.py,1W7i0KvNnTDn3CAmHAwOwS6yCkMRwDDgS,,in-repo,code/OpenFusion/tools/prepare_scene.py
@@ -26369,9 +26369,9 @@ datasets/replica_conceptgraphs/office0/results/frame001996.jpg,1KxjZhd4MNKOX1qmY
 datasets/replica_conceptgraphs/office0/results/frame001997.jpg,1Ht21cM0NRXG7XS-5MeMBhYKPaIgiy0Jx,,not-fetched,
 datasets/replica_conceptgraphs/office0/results/frame001998.jpg,1-NHBgwM-Z3KSzJXO2A8VpVwVqQMY6UKp,,not-fetched,
 datasets/replica_conceptgraphs/office0/results/frame001999.jpg,1Mat9KKJFjd7KThX1_K_wwFgiwpx3LOIL,,not-fetched,
-datasets/replica_conceptgraphs/office0/traj.txt,1S_tg3GEWv5-HDW0nuKqLP7wMdxa0C3hg,,not-fetched,
-datasets/replica_conceptgraphs/room0/gsa_classes_none.json,1-0uBtrnZx6vUZ2R00RYwP2OpUWQXLiTK,,not-fetched,
-datasets/replica_conceptgraphs/room0/gsa_classes_none_colors.json,1-cXmX1CL5qtaWzsodJAnBG93jnzSxTBR,,not-fetched,
+datasets/replica_conceptgraphs/office0/traj.txt,1S_tg3GEWv5-HDW0nuKqLP7wMdxa0C3hg,812289,in-repo,drive_extras/datasets/replica_conceptgraphs/office0/traj.txt
+datasets/replica_conceptgraphs/room0/gsa_classes_none.json,1-0uBtrnZx6vUZ2R00RYwP2OpUWQXLiTK,8,in-repo,drive_extras/datasets/replica_conceptgraphs/room0/gsa_classes_none.json
+datasets/replica_conceptgraphs/room0/gsa_classes_none_colors.json,1-cXmX1CL5qtaWzsodJAnBG93jnzSxTBR,84,in-repo,drive_extras/datasets/replica_conceptgraphs/room0/gsa_classes_none_colors.json
 datasets/replica_conceptgraphs/room0/results/depth000000.png,1_vLMuGtM8yJ8amgSqidyzUACwiR0K8uO,,not-fetched,
 datasets/replica_conceptgraphs/room0/results/depth000001.png,1TUassZT942LHH23c6xo6UBlHZfDchQb5,,not-fetched,
 datasets/replica_conceptgraphs/room0/results/depth000002.png,1T8VLbzZV2ZRqfPzMO-u9jePPTWkgdZvO,,not-fetched,
@@ -30372,44 +30372,44 @@ datasets/replica_conceptgraphs/room0/results/frame001996.jpg,1tV2wa47LG6k72td4Wx
 datasets/replica_conceptgraphs/room0/results/frame001997.jpg,1EMetYkvf_2Mbv6VUptfIbD_g8_-Jbk8a,,not-fetched,
 datasets/replica_conceptgraphs/room0/results/frame001998.jpg,1sN2ECAyITXwsM4NTqxth0MtfU7Xr9RLf,,not-fetched,
 datasets/replica_conceptgraphs/room0/results/frame001999.jpg,1jkoJxwPlALFCZD27hyhOZLLMZZAXr5tk,,not-fetched,
-datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_colors.h5,1D17AsCeJZ0FcFKV2y0GvZG8uVgeEyeiO,,not-fetched,
-datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_confidences.h5,1RHeKmvWb766U06q25Zo1QIK-12wHYDVM,,not-fetched,
-datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_features.h5,1NrbJUsgmib9skZKv34oGbSCAxzucI2Hg,,not-fetched,
-datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_points.h5,1tNq6wxMKsS3cQ8IgIDN1klq0njHh5z5R,,not-fetched,
-datasets/replica_conceptgraphs/room0/traj.txt,1mY0vLZ_yGqF_ijPpMv3W59W3QUIh5Xuo,,not-fetched,
-datasets/replica_semantic_gt/manifest.json,1AndGU3iCpC0usUi4F2KjHXQSLiVV7t2g,,not-fetched,
-datasets/replica_semantic_gt/office_0/habitat/info_semantic.json,1_jSGTzFl4Sr-WNyxJQUg0IvzPKOm9LTM,,not-fetched,
-datasets/replica_semantic_gt/office_0/habitat/mesh_semantic.ply,1DfXZvwoeEdpIi5qpt7O1YI7ZbjTy9EV3,,not-fetched,
-datasets/replica_semantic_gt/office_0/semantic.bin,13nMUTp5weXSkoogoxBwt65D8qGM_Andj,,not-fetched,
-datasets/replica_semantic_gt/office_0/semantic.json,1vy6eLGIvQEUn1s-utz1zSDdhPceKX7aF,,not-fetched,
-datasets/replica_semantic_gt/office_1/habitat/info_semantic.json,1lIvBnuahPbXXdbUfCcmzO395QJYHxOjF,,not-fetched,
-datasets/replica_semantic_gt/office_1/habitat/mesh_semantic.ply,1ZXSIGKN2rH2q4c7CFzlYX-bRxBScxknl,,not-fetched,
-datasets/replica_semantic_gt/office_1/semantic.bin,1h1kxMSh1cX1RE1719NGdasrkpr95eH6A,,not-fetched,
-datasets/replica_semantic_gt/office_1/semantic.json,1NaBhkfIZ5oWnSlMhgIfuOjDS8zjVR69R,,not-fetched,
-datasets/replica_semantic_gt/office_2/habitat/info_semantic.json,1xl8KRIbxIIsIP9eqJ8oAO5iefzs7dUHW,,not-fetched,
-datasets/replica_semantic_gt/office_2/habitat/mesh_semantic.ply,1UlfaB3ShL7PTNVgpxA2A94gib6uLbGwD,,not-fetched,
-datasets/replica_semantic_gt/office_2/semantic.bin,1bY4F8fcPOiyd3ZyaxgR6tKzDhIiXcnEA,,not-fetched,
-datasets/replica_semantic_gt/office_2/semantic.json,13fOLAqml2791s0tmVLe7JVp4uOi-8Eel,,not-fetched,
-datasets/replica_semantic_gt/office_3/habitat/info_semantic.json,1BvZZjNWtbagHq_f4a2NWDLO0i2a5mmA_,,not-fetched,
-datasets/replica_semantic_gt/office_3/habitat/mesh_semantic.ply,1DQQ9DiX0ClobtJzJv0dATHncbnrpL35Q,,not-fetched,
-datasets/replica_semantic_gt/office_3/semantic.bin,1Ps9IqnE-oS4osyuB0vUzCdbl_UjFIEot,,not-fetched,
-datasets/replica_semantic_gt/office_3/semantic.json,1ZiJP21AOlYdgRA9CuLr_fU3EnFpNMlcl,,not-fetched,
-datasets/replica_semantic_gt/office_4/habitat/info_semantic.json,1RITVRUG88VHXJ0NecxNb4gVAQGGkJz6S,,not-fetched,
-datasets/replica_semantic_gt/office_4/habitat/mesh_semantic.ply,1PaPalNigySVVwr3D4rCE0WD1n5J-EYgs,,not-fetched,
-datasets/replica_semantic_gt/office_4/semantic.bin,15rQvehCqlUq6VSWGjJZ1WjkmKilRk7OF,,not-fetched,
-datasets/replica_semantic_gt/office_4/semantic.json,1fVhgjgZLAIDwQjD4zrveNeaEHg9uTNML,,not-fetched,
-datasets/replica_semantic_gt/room_0/habitat/info_semantic.json,1aYlpXiLxDgDlgEhP753zFKasKkBWvaEy,,not-fetched,
-datasets/replica_semantic_gt/room_0/habitat/mesh_semantic.ply,1lo5zLxHfvUam6Ht_a6p-MLhoGwBOPYjJ,,not-fetched,
-datasets/replica_semantic_gt/room_0/semantic.bin,1DFuimtqDINF4yTxWDHCaxyEZvK1cOv22,,not-fetched,
-datasets/replica_semantic_gt/room_0/semantic.json,1X1UgtneHrNkbw4JDSY2NXoj-85YQlA-W,,not-fetched,
-datasets/replica_semantic_gt/room_1/habitat/info_semantic.json,142abBMNnyf-DP5_2rTj4HY0Zkc0fvCNX,,not-fetched,
-datasets/replica_semantic_gt/room_1/habitat/mesh_semantic.ply,1HdZSmAEibUGblrQbIx1hSW4HPXn-YUa2,,not-fetched,
-datasets/replica_semantic_gt/room_1/semantic.bin,13b0tu20vpoXHo4UsrkSomC7KoOw4zVIk,,not-fetched,
-datasets/replica_semantic_gt/room_1/semantic.json,1md6GE5APy_lrS9SlApJM1ZPCXbJphP2W,,not-fetched,
-datasets/replica_semantic_gt/room_2/habitat/info_semantic.json,1jDJ9qKVDhkjHP7etwMVU91ZYZZLoKIW7,,not-fetched,
-datasets/replica_semantic_gt/room_2/habitat/mesh_semantic.ply,17EUEWWe_flbB6oDZFgYgEN7iht_N43Fe,,not-fetched,
-datasets/replica_semantic_gt/room_2/semantic.bin,1FaTKIptHyiAZmry4E-XyWyjSXJhWDli4,,not-fetched,
-datasets/replica_semantic_gt/room_2/semantic.json,1jeKwPwS3U2wp4iY9Xp6PRGsVIXIzBW1E,,not-fetched,
+datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_colors.h5,1D17AsCeJZ0FcFKV2y0GvZG8uVgeEyeiO,93061268,in-repo,drive_extras/datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_colors.h5
+datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_confidences.h5,1RHeKmvWb766U06q25Zo1QIK-12wHYDVM,31021788,in-repo,drive_extras/datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_confidences.h5
+datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_features.h5,1NrbJUsgmib9skZKv34oGbSCAxzucI2Hg,31021788,in-repo,drive_extras/datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_features.h5
+datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_points.h5,1tNq6wxMKsS3cQ8IgIDN1klq0njHh5z5R,93061268,in-repo,drive_extras/datasets/replica_conceptgraphs/room0/rgb_cloud/pointclouds/pc_points.h5
+datasets/replica_conceptgraphs/room0/traj.txt,1mY0vLZ_yGqF_ijPpMv3W59W3QUIh5Xuo,811033,in-repo,drive_extras/datasets/replica_conceptgraphs/room0/traj.txt
+datasets/replica_semantic_gt/manifest.json,1AndGU3iCpC0usUi4F2KjHXQSLiVV7t2g,3309,in-repo,drive_extras/datasets/replica_semantic_gt/manifest.json
+datasets/replica_semantic_gt/office_0/habitat/info_semantic.json,1_jSGTzFl4Sr-WNyxJQUg0IvzPKOm9LTM,56790,in-repo,drive_extras/datasets/replica_semantic_gt/office_0/habitat/info_semantic.json
+datasets/replica_semantic_gt/office_0/habitat/mesh_semantic.ply,1DfXZvwoeEdpIi5qpt7O1YI7ZbjTy9EV3,27103742,in-repo,drive_extras/datasets/replica_semantic_gt/office_0/habitat/mesh_semantic.ply
+datasets/replica_semantic_gt/office_0/semantic.bin,13nMUTp5weXSkoogoxBwt65D8qGM_Andj,4709984,in-repo,drive_extras/datasets/replica_semantic_gt/office_0/semantic.bin
+datasets/replica_semantic_gt/office_0/semantic.json,1vy6eLGIvQEUn1s-utz1zSDdhPceKX7aF,1324972,in-repo,drive_extras/datasets/replica_semantic_gt/office_0/semantic.json
+datasets/replica_semantic_gt/office_1/habitat/info_semantic.json,1lIvBnuahPbXXdbUfCcmzO395QJYHxOjF,44894,in-repo,drive_extras/datasets/replica_semantic_gt/office_1/habitat/info_semantic.json
+datasets/replica_semantic_gt/office_1/habitat/mesh_semantic.ply,1ZXSIGKN2rH2q4c7CFzlYX-bRxBScxknl,19452680,in-repo,drive_extras/datasets/replica_semantic_gt/office_1/habitat/mesh_semantic.ply
+datasets/replica_semantic_gt/office_1/semantic.bin,1h1kxMSh1cX1RE1719NGdasrkpr95eH6A,3381472,in-repo,drive_extras/datasets/replica_semantic_gt/office_1/semantic.bin
+datasets/replica_semantic_gt/office_1/semantic.json,1NaBhkfIZ5oWnSlMhgIfuOjDS8zjVR69R,75175,in-repo,drive_extras/datasets/replica_semantic_gt/office_1/semantic.json
+datasets/replica_semantic_gt/office_2/habitat/info_semantic.json,1xl8KRIbxIIsIP9eqJ8oAO5iefzs7dUHW,76397,in-repo,drive_extras/datasets/replica_semantic_gt/office_2/habitat/info_semantic.json
+datasets/replica_semantic_gt/office_2/habitat/mesh_semantic.ply,1UlfaB3ShL7PTNVgpxA2A94gib6uLbGwD,39482238,in-repo,drive_extras/datasets/replica_semantic_gt/office_2/habitat/mesh_semantic.ply
+datasets/replica_semantic_gt/office_2/semantic.bin,1bY4F8fcPOiyd3ZyaxgR6tKzDhIiXcnEA,6862728,in-repo,drive_extras/datasets/replica_semantic_gt/office_2/semantic.bin
+datasets/replica_semantic_gt/office_2/semantic.json,13fOLAqml2791s0tmVLe7JVp4uOi-8Eel,105283,in-repo,drive_extras/datasets/replica_semantic_gt/office_2/semantic.json
+datasets/replica_semantic_gt/office_3/habitat/info_semantic.json,1BvZZjNWtbagHq_f4a2NWDLO0i2a5mmA_,82836,in-repo,drive_extras/datasets/replica_semantic_gt/office_3/habitat/info_semantic.json
+datasets/replica_semantic_gt/office_3/habitat/mesh_semantic.ply,1DQQ9DiX0ClobtJzJv0dATHncbnrpL35Q,54586992,in-repo,drive_extras/datasets/replica_semantic_gt/office_3/habitat/mesh_semantic.ply
+datasets/replica_semantic_gt/office_3/semantic.bin,1Ps9IqnE-oS4osyuB0vUzCdbl_UjFIEot,9481744,in-repo,drive_extras/datasets/replica_semantic_gt/office_3/semantic.bin
+datasets/replica_semantic_gt/office_3/semantic.json,1ZiJP21AOlYdgRA9CuLr_fU3EnFpNMlcl,195724,in-repo,drive_extras/datasets/replica_semantic_gt/office_3/semantic.json
+datasets/replica_semantic_gt/office_4/habitat/info_semantic.json,1RITVRUG88VHXJ0NecxNb4gVAQGGkJz6S,57259,in-repo,drive_extras/datasets/replica_semantic_gt/office_4/habitat/info_semantic.json
+datasets/replica_semantic_gt/office_4/habitat/mesh_semantic.ply,1PaPalNigySVVwr3D4rCE0WD1n5J-EYgs,45676849,in-repo,drive_extras/datasets/replica_semantic_gt/office_4/habitat/mesh_semantic.ply
+datasets/replica_semantic_gt/office_4/semantic.bin,15rQvehCqlUq6VSWGjJZ1WjkmKilRk7OF,7943272,in-repo,drive_extras/datasets/replica_semantic_gt/office_4/semantic.bin
+datasets/replica_semantic_gt/office_4/semantic.json,1fVhgjgZLAIDwQjD4zrveNeaEHg9uTNML,134983,in-repo,drive_extras/datasets/replica_semantic_gt/office_4/semantic.json
+datasets/replica_semantic_gt/room_0/habitat/info_semantic.json,1aYlpXiLxDgDlgEhP753zFKasKkBWvaEy,76790,in-repo,drive_extras/datasets/replica_semantic_gt/room_0/habitat/info_semantic.json
+datasets/replica_semantic_gt/room_0/habitat/mesh_semantic.ply,1lo5zLxHfvUam6Ht_a6p-MLhoGwBOPYjJ,43890939,in-repo,drive_extras/datasets/replica_semantic_gt/room_0/habitat/mesh_semantic.ply
+datasets/replica_semantic_gt/room_0/semantic.bin,1DFuimtqDINF4yTxWDHCaxyEZvK1cOv22,7627728,in-repo,drive_extras/datasets/replica_semantic_gt/room_0/semantic.bin
+datasets/replica_semantic_gt/room_0/semantic.json,1X1UgtneHrNkbw4JDSY2NXoj-85YQlA-W,215102,in-repo,drive_extras/datasets/replica_semantic_gt/room_0/semantic.json
+datasets/replica_semantic_gt/room_1/habitat/info_semantic.json,142abBMNnyf-DP5_2rTj4HY0Zkc0fvCNX,49102,in-repo,drive_extras/datasets/replica_semantic_gt/room_1/habitat/info_semantic.json
+datasets/replica_semantic_gt/room_1/habitat/mesh_semantic.ply,1HdZSmAEibUGblrQbIx1hSW4HPXn-YUa2,29685668,in-repo,drive_extras/datasets/replica_semantic_gt/room_1/habitat/mesh_semantic.ply
+datasets/replica_semantic_gt/room_1/semantic.bin,13b0tu20vpoXHo4UsrkSomC7KoOw4zVIk,5158344,in-repo,drive_extras/datasets/replica_semantic_gt/room_1/semantic.bin
+datasets/replica_semantic_gt/room_1/semantic.json,1md6GE5APy_lrS9SlApJM1ZPCXbJphP2W,151500,in-repo,drive_extras/datasets/replica_semantic_gt/room_1/semantic.json
+datasets/replica_semantic_gt/room_2/habitat/info_semantic.json,1jDJ9qKVDhkjHP7etwMVU91ZYZZLoKIW7,54008,in-repo,drive_extras/datasets/replica_semantic_gt/room_2/habitat/info_semantic.json
+datasets/replica_semantic_gt/room_2/habitat/mesh_semantic.ply,17EUEWWe_flbB6oDZFgYgEN7iht_N43Fe,33233316,in-repo,drive_extras/datasets/replica_semantic_gt/room_2/habitat/mesh_semantic.ply
+datasets/replica_semantic_gt/room_2/semantic.bin,1FaTKIptHyiAZmry4E-XyWyjSXJhWDli4,5779184,in-repo,drive_extras/datasets/replica_semantic_gt/room_2/semantic.bin
+datasets/replica_semantic_gt/room_2/semantic.json,1jeKwPwS3U2wp4iY9Xp6PRGsVIXIzBW1E,166400,in-repo,drive_extras/datasets/replica_semantic_gt/room_2/semantic.json
 datasets/replica_v1_0/replica_v1_0.tar.gz.partaa,1vOgztV5fiSJu6uXIMLk2jMhc59W5L5z6,,not-fetched,
 datasets/replica_v1_0/replica_v1_0.tar.gz.partab,1WlIDDQlPgPecwzeUc56z3qcrQDt8ceep,,not-fetched,
 datasets/replica_v1_0/replica_v1_0.tar.gz.partac,1OUUO2sz4pVrwVh9J9APY0tZPhle5Void,,not-fetched,
@@ -30427,7 +30427,7 @@ datasets/replica_v1_0/replica_v1_0.tar.gz.partan,1cUDKM5N3OnnytX4LxDLqlKYoAa2xMz
 datasets/replica_v1_0/replica_v1_0.tar.gz.partao,1u2H1G2U10EMQcGqIf1rzKaKHb3JDYrUA,,not-fetched,
 datasets/replica_v1_0/replica_v1_0.tar.gz.partap,1hhVVuOt6mA_E64qSjLctOq3gVgvup5Bx,,not-fetched,
 datasets/replica_v1_0/replica_v1_0.tar.gz.partaq,1XSseliqBPhBFou95Fgqr8M_nVM1IMsgx,,not-fetched,
-datasets/replica_v1_0_recovery_manifest.json,1pUq65_BWqY3NEvv7LhHvJZmSOeC98Glp,,not-fetched,
+datasets/replica_v1_0_recovery_manifest.json,1pUq65_BWqY3NEvv7LhHvJZmSOeC98Glp,6536,in-repo,drive_extras/datasets/replica_v1_0_recovery_manifest.json
 logs/colab_environment.json,13vNkno0ADg5KXgTtSk-mcUSHxGHy-5gB,2023,in-repo,drive_extras/logs/colab_environment.json
 logs/session_checkpoints/PROJECT_PROGRESS.md,1clwvH6Ps7FfP6SUqo-CmWfBaVrT-ZC3n,3983,in-repo,drive_extras/logs/session_checkpoints/PROJECT_PROGRESS.md
 logs/session_checkpoints/PROJECT_PROGRESS_LATEST.md,1AnY_bPgO0NeKbtxDMXJJdlHQbV5iVTRV,5671,in-repo,drive_extras/logs/session_checkpoints/PROJECT_PROGRESS_LATEST.md
@@ -30442,11 +30442,11 @@ outputs/conceptgraphs_repro/room0/full_pcd_none_exp_post.pkl.gz,1Sbg7KRnbk0y1Mpf
 outputs/openfusion_repro/office0/reproduction_metadata.txt,1bMzOIflrFu2JqpKG7qndMuzVE8ZFG37u,1087,in-repo,drive_extras/outputs/openfusion_repro/office0/reproduction_metadata.txt
 outputs/openfusion_repro/office0/run.log,1v0boQwr4DMTvrSvB4yrqTNP40DEj7nSe,38331,in-repo,drive_extras/outputs/openfusion_repro/office0/run.log
 outputs/openfusion_repro/office0/semantic_pc.ply,1QqIBQDic3CTFskWSe0bYlyUngdjEwQlq,13500209,in-repo,drive_extras/outputs/openfusion_repro/office0/semantic_pc.ply
-outputs/openfusion_repro/office0/vlfusion.npz,1C0X7YB8_6Zzqc90JMSDpj7Gxq3hWjT1N,206478257,in-repo-split,drive_extras/outputs/openfusion_repro/office0/vlfusion.npz.part000..(see REASSEMBLE.md)
+outputs/openfusion_repro/office0/vlfusion.npz,1C0X7YB8_6Zzqc90JMSDpj7Gxq3hWjT1N,206478257,in-repo-split,drive_extras/outputs/openfusion_repro/office0/vlfusion.npz.part000.. (see REASSEMBLE.md)
 outputs/openfusion_repro/room0/reproduction_metadata.txt,1kheI96sf55hBqa2tJqUrHRALwqUBJiKN,1132,in-repo,drive_extras/outputs/openfusion_repro/room0/reproduction_metadata.txt
 outputs/openfusion_repro/room0/run.log,1qG1fcrSjF9v0NrAhsZaqafTze675t6Ap,41123,in-repo,drive_extras/outputs/openfusion_repro/room0/run.log
 outputs/openfusion_repro/room0/semantic_pc.ply,1flf3mysXqYkhObw5T2ctzRH2Zj42kxVg,13500209,in-repo,drive_extras/outputs/openfusion_repro/room0/semantic_pc.ply
-outputs/openfusion_repro/room0/vlfusion.npz,1YU8cBN9VGavEIa3YF6CS6o43eLVSPEL4,327961105,in-repo-split,drive_extras/outputs/openfusion_repro/room0/vlfusion.npz.part000..(see REASSEMBLE.md)
+outputs/openfusion_repro/room0/vlfusion.npz,1YU8cBN9VGavEIa3YF6CS6o43eLVSPEL4,327961105,in-repo-split,drive_extras/outputs/openfusion_repro/room0/vlfusion.npz.part000.. (see REASSEMBLE.md)
 production_backup/cache/office0/frames/000000.npz,1aa3Im42k2--6zLrDF9t2mnjHUCIzGmXs,773487,in-repo,drive_extras/production_backup/cache/office0/frames/000000.npz
 production_backup/cache/office0/frames/000010.npz,12OD_v2lTCJApcMv87cryNmrHhZVq89Sl,771946,in-repo,drive_extras/production_backup/cache/office0/frames/000010.npz
 production_backup/cache/office0/frames/000020.npz,1RIVOOqfyNHcnD8dbkyOXmBxsWycH8o4v,805566,in-repo,drive_extras/production_backup/cache/office0/frames/000020.npz
@@ -31058,19 +31058,19 @@ production_backup/production_validation.json,1p65WFhOteJH2N78l9ygL5DYqqGJSTti1,4
 production_backup/results/final/accuracy_comparison.png,1TiRfrlcwlz2v2zJPClFc74JD2rSXcebb,78644,in-repo,drive_extras/production_backup/results/final/accuracy_comparison.png
 production_backup/results/final/aggregate_statistics.json,1SJDTt3fpBbRRgkTZstl3yoELdlC2T2Zo,707,in-repo,drive_extras/production_backup/results/final/aggregate_statistics.json
 production_backup/results/final/final_metrics_summary.json,1UYuwz8ZSChsKLnHU38KP9mH-om20lcCc,187243,in-repo,drive_extras/production_backup/results/final/final_metrics_summary.json
-production_backup/results/final/fusion/office0/F1.npz,1i0YCRMXlKzDeH-ufjNjVklsGCBJyu_KG,104644532,in-repo-split,drive_extras/production_backup/results/final/fusion/office0/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/results/final/fusion/office0/F2.npz,1Hdd7rzOQKPWtibphiWuwmLVNd1m9oUid,104683930,in-repo-split,drive_extras/production_backup/results/final/fusion/office0/F2.npz.part000..(see REASSEMBLE.md)
+production_backup/results/final/fusion/office0/F1.npz,1i0YCRMXlKzDeH-ufjNjVklsGCBJyu_KG,104644532,in-repo-split,drive_extras/production_backup/results/final/fusion/office0/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/results/final/fusion/office0/F2.npz,1Hdd7rzOQKPWtibphiWuwmLVNd1m9oUid,104683930,in-repo-split,drive_extras/production_backup/results/final/fusion/office0/F2.npz.part000.. (see REASSEMBLE.md)
 production_backup/results/final/fusion/office0/F3.npz,1a_1p9Mj4PNxiZ2MMHKRR2qoyDnNIufMt,51708510,in-repo,drive_extras/production_backup/results/final/fusion/office0/F3.npz
 production_backup/results/final/fusion/office0/gt_voxels.npz,1n9oi9JRytwDm2pvuRAkXJh_BI0XWm-Fj,136133,in-repo,drive_extras/production_backup/results/final/fusion/office0/gt_voxels.npz
 production_backup/results/final/fusion/office0/observation_index.npz,1tgYIUzmp7X7L7Cf86peABspSLc7ceAC1,21624899,in-repo,drive_extras/production_backup/results/final/fusion/office0/observation_index.npz
-production_backup/results/final/fusion/office2/F1.npz,1FLfjvpcZ6ZS1Z5Tn1Dn8R7JZVvqjshf8,148241242,in-repo-split,drive_extras/production_backup/results/final/fusion/office2/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/results/final/fusion/office2/F2.npz,1HIeiiFAOpSfu1QE9FPI21mJ7firQP2wc,148245947,in-repo-split,drive_extras/production_backup/results/final/fusion/office2/F2.npz.part000..(see REASSEMBLE.md)
+production_backup/results/final/fusion/office2/F1.npz,1FLfjvpcZ6ZS1Z5Tn1Dn8R7JZVvqjshf8,148241242,in-repo-split,drive_extras/production_backup/results/final/fusion/office2/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/results/final/fusion/office2/F2.npz,1HIeiiFAOpSfu1QE9FPI21mJ7firQP2wc,148245947,in-repo-split,drive_extras/production_backup/results/final/fusion/office2/F2.npz.part000.. (see REASSEMBLE.md)
 production_backup/results/final/fusion/office2/F3.npz,1vOps70rC3XmDW6qxg9M1EcfUTkkC4uJT,87036849,in-repo,drive_extras/production_backup/results/final/fusion/office2/F3.npz
 production_backup/results/final/fusion/office2/gt_voxels.npz,1mNAtJt__1D2t4s0QtexHymu4K7CagDB7,183770,in-repo,drive_extras/production_backup/results/final/fusion/office2/gt_voxels.npz
 production_backup/results/final/fusion/office2/observation_index.npz,1WaIi_ZdgGPM4Fw_zio5LAZUrM1zYjwQ_,19787653,in-repo,drive_extras/production_backup/results/final/fusion/office2/observation_index.npz
-production_backup/results/final/fusion/room0/F1.npz,13GjbIDx6Pb3CPnbgnQCaBqFKmDi35Gsn,178546556,in-repo-split,drive_extras/production_backup/results/final/fusion/room0/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/results/final/fusion/room0/F2.npz,1zwtLz6IdUDiHLiaIfps8rMVdVhyO9tEh,178564255,in-repo-split,drive_extras/production_backup/results/final/fusion/room0/F2.npz.part000..(see REASSEMBLE.md)
-production_backup/results/final/fusion/room0/F3.npz,1qwnm9zjCA8Dwy7ADQMQpREOBcq7zCKIY,104547195,in-repo-split,drive_extras/production_backup/results/final/fusion/room0/F3.npz.part000..(see REASSEMBLE.md)
+production_backup/results/final/fusion/room0/F1.npz,13GjbIDx6Pb3CPnbgnQCaBqFKmDi35Gsn,178546556,in-repo-split,drive_extras/production_backup/results/final/fusion/room0/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/results/final/fusion/room0/F2.npz,1zwtLz6IdUDiHLiaIfps8rMVdVhyO9tEh,178564255,in-repo-split,drive_extras/production_backup/results/final/fusion/room0/F2.npz.part000.. (see REASSEMBLE.md)
+production_backup/results/final/fusion/room0/F3.npz,1qwnm9zjCA8Dwy7ADQMQpREOBcq7zCKIY,104547195,in-repo-split,drive_extras/production_backup/results/final/fusion/room0/F3.npz.part000.. (see REASSEMBLE.md)
 production_backup/results/final/fusion/room0/gt_voxels.npz,1vO-F9Ft2UCClwQ08L4toDUiMgKvIF7hH,219942,in-repo,drive_extras/production_backup/results/final/fusion/room0/gt_voxels.npz
 production_backup/results/final/fusion/room0/observation_index.npz,1bGdOT2Rb4uW95wcwnFY9jIm28O87fbub,26151030,in-repo,drive_extras/production_backup/results/final/fusion/room0/observation_index.npz
 production_backup/results/final/fusion_differences.csv,16Uoe6tvvnuYxy1vbVzqoVwLeyJA-TIx0,1243,in-repo,drive_extras/production_backup/results/final/fusion_differences.csv
@@ -31081,19 +31081,19 @@ production_backup/results/final/miou_comparison.png,1m7Ke9amp1VS3lmbk6GHxvWUouzk
 production_backup/results/final/quantitative_comparison.csv,1CrVKQnHgBAKri3try2QCd_NvH4KFfmhD,293282,in-repo,drive_extras/production_backup/results/final/quantitative_comparison.csv
 production_backup/results/final/quantitative_comparison.json,1VyCuJolecbPLLPXqmCGcgZV8Y-2J8Ed3,530208,in-repo,drive_extras/production_backup/results/final/quantitative_comparison.json
 production_backup/results/final/semantic_evaluation.json,1PPH3VA5uI5EWh8Mt4d_pLIWZwVRm7Dh7,199807,in-repo,drive_extras/production_backup/results/final/semantic_evaluation.json
-production_backup/results/fusion/office0/F1.npz,1nNea-Gg2v_pVxcYlOHgLboFv5Wpk9wsf,104644532,in-repo-split,drive_extras/production_backup/results/fusion/office0/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/results/fusion/office0/F2.npz,1vyFqjUSMNk_xFbOq0k6Y-cTyS1dEAKlt,104683930,in-repo-split,drive_extras/production_backup/results/fusion/office0/F2.npz.part000..(see REASSEMBLE.md)
+production_backup/results/fusion/office0/F1.npz,1nNea-Gg2v_pVxcYlOHgLboFv5Wpk9wsf,104644532,in-repo-split,drive_extras/production_backup/results/fusion/office0/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/results/fusion/office0/F2.npz,1vyFqjUSMNk_xFbOq0k6Y-cTyS1dEAKlt,104683930,in-repo-split,drive_extras/production_backup/results/fusion/office0/F2.npz.part000.. (see REASSEMBLE.md)
 production_backup/results/fusion/office0/F3.npz,1lboZE-935WSR-j4TU02ysfiVEl7HO7l1,51708510,in-repo,drive_extras/production_backup/results/fusion/office0/F3.npz
 production_backup/results/fusion/office0/gt_voxels.npz,1D19VZvo6Xl2Q7pPc5zEl8EsdRNTVnhpk,136133,in-repo,drive_extras/production_backup/results/fusion/office0/gt_voxels.npz
 production_backup/results/fusion/office0/observation_index.npz,12zQvNS8Ig9wbxdU96Ik_3DBPS7HmyO9-,21624899,in-repo,drive_extras/production_backup/results/fusion/office0/observation_index.npz
-production_backup/results/fusion/office2/F1.npz,16YfDX6FKXfMrnJVcK3DKyIvWFSmhQbyH,148241242,in-repo-split,drive_extras/production_backup/results/fusion/office2/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/results/fusion/office2/F2.npz,149zHcUY1L-k2Uxx-yHmklFNRlsRPXKAr,148245947,in-repo-split,drive_extras/production_backup/results/fusion/office2/F2.npz.part000..(see REASSEMBLE.md)
+production_backup/results/fusion/office2/F1.npz,16YfDX6FKXfMrnJVcK3DKyIvWFSmhQbyH,148241242,in-repo-split,drive_extras/production_backup/results/fusion/office2/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/results/fusion/office2/F2.npz,149zHcUY1L-k2Uxx-yHmklFNRlsRPXKAr,148245947,in-repo-split,drive_extras/production_backup/results/fusion/office2/F2.npz.part000.. (see REASSEMBLE.md)
 production_backup/results/fusion/office2/F3.npz,1MNaaTGyUO1X-enhpG4AlE8FJJiUL0sEy,87036849,in-repo,drive_extras/production_backup/results/fusion/office2/F3.npz
 production_backup/results/fusion/office2/gt_voxels.npz,1FThxI5EAfs1OswsQz0MhXuQhUxHFZm5M,183770,in-repo,drive_extras/production_backup/results/fusion/office2/gt_voxels.npz
 production_backup/results/fusion/office2/observation_index.npz,1uD9ur4LOzPSBgiYJ_HMkNoMejFAP_q08,19787653,in-repo,drive_extras/production_backup/results/fusion/office2/observation_index.npz
-production_backup/results/fusion/room0/F1.npz,19dvNwPzSigUVKvX4PeZEdiVvEEnF12dm,178546556,in-repo-split,drive_extras/production_backup/results/fusion/room0/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/results/fusion/room0/F2.npz,1wcGTmmzABlex35e9ZZRnTv72nnEoy_t7,178564255,in-repo-split,drive_extras/production_backup/results/fusion/room0/F2.npz.part000..(see REASSEMBLE.md)
-production_backup/results/fusion/room0/F3.npz,1iIkuZLdOyCS4Q5Keh832rVKpCtsCDkaD,104547195,in-repo-split,drive_extras/production_backup/results/fusion/room0/F3.npz.part000..(see REASSEMBLE.md)
+production_backup/results/fusion/room0/F1.npz,19dvNwPzSigUVKvX4PeZEdiVvEEnF12dm,178546556,in-repo-split,drive_extras/production_backup/results/fusion/room0/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/results/fusion/room0/F2.npz,1wcGTmmzABlex35e9ZZRnTv72nnEoy_t7,178564255,in-repo-split,drive_extras/production_backup/results/fusion/room0/F2.npz.part000.. (see REASSEMBLE.md)
+production_backup/results/fusion/room0/F3.npz,1iIkuZLdOyCS4Q5Keh832rVKpCtsCDkaD,104547195,in-repo-split,drive_extras/production_backup/results/fusion/room0/F3.npz.part000.. (see REASSEMBLE.md)
 production_backup/results/fusion/room0/gt_voxels.npz,1mARDmGuF8VzJqEH5HrsZX5wz5KuwLg2-,219942,in-repo,drive_extras/production_backup/results/fusion/room0/gt_voxels.npz
 production_backup/results/fusion/room0/observation_index.npz,1LIpHBA4nSMPWZFIl-2xNPppvKEM68U1u,26151030,in-repo,drive_extras/production_backup/results/fusion/room0/observation_index.npz
 production_backup/session_checkpoint/code/__pycache__/data_loader.cpython-313.pyc,1brkaSJcMfNdl34HhKhR8PPcwjzaZIAFi,10558,in-repo,drive_extras/production_backup/session_checkpoint/code/__pycache__/data_loader.cpython-313.pyc
@@ -31323,19 +31323,19 @@ production_backup/session_checkpoint/pip_freeze.txt,1bWr5R83fGzUq_l1oVSMrj835Jj1
 production_backup/session_checkpoint/production_config.json,1i9eLOwOR-xIX7dK78HC-WYQWa5F4KExw,883,in-repo,drive_extras/production_backup/session_checkpoint/production_config.json
 production_backup/session_checkpoint/results/final/fusion_validation.json,1lkWI8z6xhuse2KQa7Yldzo_sV5eAGniu,2039,in-repo,drive_extras/production_backup/session_checkpoint/results/final/fusion_validation.json
 production_backup/session_checkpoint/results/final/semantic_evaluation.json,187RhIrBkXTVrT6dT7bGj5IPYXqLaOBCO,199807,in-repo,drive_extras/production_backup/session_checkpoint/results/final/semantic_evaluation.json
-production_backup/session_checkpoint/results/fusion/office0/F1.npz,1dS0Tq7X9ioGj2muBZn716hQbM2hWHzLh,104644532,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/office0/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/session_checkpoint/results/fusion/office0/F2.npz,1uGkxt8MgLr1LMR60vIJeNZ3PtTHXgL6u,104683930,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/office0/F2.npz.part000..(see REASSEMBLE.md)
+production_backup/session_checkpoint/results/fusion/office0/F1.npz,1dS0Tq7X9ioGj2muBZn716hQbM2hWHzLh,104644532,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/office0/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/session_checkpoint/results/fusion/office0/F2.npz,1uGkxt8MgLr1LMR60vIJeNZ3PtTHXgL6u,104683930,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/office0/F2.npz.part000.. (see REASSEMBLE.md)
 production_backup/session_checkpoint/results/fusion/office0/F3.npz,17bx4dgdP2WAudgGVfykQiBAlk4Af0pzR,51708510,in-repo,drive_extras/production_backup/session_checkpoint/results/fusion/office0/F3.npz
 production_backup/session_checkpoint/results/fusion/office0/gt_voxels.npz,1vEFWyfOSyRFc4Okd5ySkgT2GtCIu0NBh,136133,in-repo,drive_extras/production_backup/session_checkpoint/results/fusion/office0/gt_voxels.npz
 production_backup/session_checkpoint/results/fusion/office0/observation_index.npz,1h9aZ0swdKHoOaRFhCPPf8LmPgfUfZWZk,21624899,in-repo,drive_extras/production_backup/session_checkpoint/results/fusion/office0/observation_index.npz
-production_backup/session_checkpoint/results/fusion/office2/F1.npz,12eIZsRs-Khy5vPRDLz8pOUWPO1kgliuI,148241242,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/office2/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/session_checkpoint/results/fusion/office2/F2.npz,15uhAkVmvsySMD9ZzVnWTUhKb1SLzZH4m,148245947,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/office2/F2.npz.part000..(see REASSEMBLE.md)
+production_backup/session_checkpoint/results/fusion/office2/F1.npz,12eIZsRs-Khy5vPRDLz8pOUWPO1kgliuI,148241242,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/office2/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/session_checkpoint/results/fusion/office2/F2.npz,15uhAkVmvsySMD9ZzVnWTUhKb1SLzZH4m,148245947,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/office2/F2.npz.part000.. (see REASSEMBLE.md)
 production_backup/session_checkpoint/results/fusion/office2/F3.npz,1T6e0vrjIK4TZt4uSnTCeKyffmBFS5D0f,87036849,in-repo,drive_extras/production_backup/session_checkpoint/results/fusion/office2/F3.npz
 production_backup/session_checkpoint/results/fusion/office2/gt_voxels.npz,1NaBIbH33da-gb1gfzrghKdViOahktanS,183770,in-repo,drive_extras/production_backup/session_checkpoint/results/fusion/office2/gt_voxels.npz
 production_backup/session_checkpoint/results/fusion/office2/observation_index.npz,1fs3aj-hD7bIyXZJDfz2eVFIUvSL6KwER,19787653,in-repo,drive_extras/production_backup/session_checkpoint/results/fusion/office2/observation_index.npz
-production_backup/session_checkpoint/results/fusion/room0/F1.npz,1QmQY_Y-JpfGHFpQQf69sym2r9ifB2j3D,178546556,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/room0/F1.npz.part000..(see REASSEMBLE.md)
-production_backup/session_checkpoint/results/fusion/room0/F2.npz,1VNkInjwxgicIoIcJ648fhLKk6RQVz_qc,178564255,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/room0/F2.npz.part000..(see REASSEMBLE.md)
-production_backup/session_checkpoint/results/fusion/room0/F3.npz,1qFjNTbMxEWeZe4evRGQz4Rry6nMJMY0f,104547195,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/room0/F3.npz.part000..(see REASSEMBLE.md)
+production_backup/session_checkpoint/results/fusion/room0/F1.npz,1QmQY_Y-JpfGHFpQQf69sym2r9ifB2j3D,178546556,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/room0/F1.npz.part000.. (see REASSEMBLE.md)
+production_backup/session_checkpoint/results/fusion/room0/F2.npz,1VNkInjwxgicIoIcJ648fhLKk6RQVz_qc,178564255,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/room0/F2.npz.part000.. (see REASSEMBLE.md)
+production_backup/session_checkpoint/results/fusion/room0/F3.npz,1qFjNTbMxEWeZe4evRGQz4Rry6nMJMY0f,104547195,in-repo-split,drive_extras/production_backup/session_checkpoint/results/fusion/room0/F3.npz.part000.. (see REASSEMBLE.md)
 production_backup/session_checkpoint/results/fusion/room0/gt_voxels.npz,1zDLjqqKokFqqjT4GHHki57ApPb_Z3LzW,219942,in-repo,drive_extras/production_backup/session_checkpoint/results/fusion/room0/gt_voxels.npz
 production_backup/session_checkpoint/results/fusion/room0/observation_index.npz,1T4MYSGybtq2-tbLExZzK_24HcdGUtlOk,26151030,in-repo,drive_extras/production_backup/session_checkpoint/results/fusion/room0/observation_index.npz
 production_backup/session_checkpoint/state/master_state.json,1XjdMmLIDGsCtF5tEySiGGWU_kNI4mohy,22838,in-repo,drive_extras/production_backup/session_checkpoint/state/master_state.json

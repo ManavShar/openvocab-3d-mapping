@@ -1,0 +1,3092 @@
+{
+    "dataset": "./mesh.ply",
+    "gravityCenter": {
+        "x": 0.9496299028396606,
+        "y": 0.6813837289810181,
+        "z": -0.9636256694793701
+    },
+    "gravityDirection": {
+        "x": -0.0001231766800628975,
+        "y": -0.0010212998604401946,
+        "z": -0.9999995231628418
+    },
+    "idType": "uint32_t",
+    "meta": {
+        "elapseAccumulated": 10815.115480999999,
+        "elapseCurrent": 1739.298922,
+        "initialization": "./semantic.bin",
+        "timeUnit": "second",
+        "totalLeaves": 232,
+        "totalNodes": 279,
+        "totalObjects_level1": 47
+    },
+    "segmentation": [
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 0,
+            "layer": 0,
+            "lock": false,
+            "numPrimitives": 2,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 1,
+            "layer": 0,
+            "lock": false,
+            "numPrimitives": 1,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 2,
+            "layer": 0,
+            "lock": false,
+            "numPrimitives": 12,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 3,
+            "layer": 0,
+            "lock": false,
+            "numPrimitives": 4,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 4,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 527,
+            "parent": "9"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 5,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 14810,
+            "parent": "9"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 6,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 118,
+            "parent": "9"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 7,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 297,
+            "parent": "9"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 8,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 284,
+            "parent": "9"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "4",
+                "5",
+                "6",
+                "7",
+                "8"
+            ],
+            "class": "door",
+            "id": 9,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 10,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 70,
+            "parent": "11"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "10"
+            ],
+            "class": "switch",
+            "id": 11,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 12,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 151,
+            "parent": "14"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 13,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 148,
+            "parent": "14"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "12",
+                "13"
+            ],
+            "class": "undefined",
+            "id": 14,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 15,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 149,
+            "parent": "17"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 16,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 62,
+            "parent": "17"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "15",
+                "16"
+            ],
+            "class": "undefined",
+            "id": 17,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 18,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 44,
+            "parent": "19"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "18"
+            ],
+            "class": "undefined",
+            "id": 19,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 20,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 73,
+            "parent": "21"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "20"
+            ],
+            "class": "undefined",
+            "id": 21,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 22,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 475,
+            "parent": "25"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 23,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 253,
+            "parent": "25"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 24,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 116,
+            "parent": "25"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "22",
+                "23",
+                "24"
+            ],
+            "class": "vent",
+            "id": 25,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 26,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 174,
+            "parent": "30"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 27,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2087,
+            "parent": "30"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 28,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 12,
+            "parent": "30"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 29,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 254,
+            "parent": "30"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "26",
+                "27",
+                "28",
+                "29"
+            ],
+            "class": "lamp",
+            "id": 30,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 31,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2208,
+            "parent": "33"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 32,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 316,
+            "parent": "33"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "31",
+                "32"
+            ],
+            "class": "lamp",
+            "id": 33,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 34,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 397,
+            "parent": "37"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 35,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 55142,
+            "parent": "37"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 36,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 47,
+            "parent": "37"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "34",
+                "35",
+                "36"
+            ],
+            "class": "ceiling",
+            "id": 37,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 38,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "46"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 39,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 520,
+            "parent": "46"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 40,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 57,
+            "parent": "46"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 41,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2780,
+            "parent": "46"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 42,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 7,
+            "parent": "46"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 43,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 12,
+            "parent": "46"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 44,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 35,
+            "parent": "46"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 45,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 143,
+            "parent": "46"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "38",
+                "39",
+                "40",
+                "41",
+                "42",
+                "43",
+                "44",
+                "45"
+            ],
+            "class": "bin",
+            "id": 46,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 47,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3,
+            "parent": "53"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 48,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 20,
+            "parent": "53"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 49,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 305,
+            "parent": "53"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 50,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 15899,
+            "parent": "53"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 51,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 210,
+            "parent": "53"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 52,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 72,
+            "parent": "53"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "47",
+                "48",
+                "49",
+                "50",
+                "51",
+                "52"
+            ],
+            "class": "wall",
+            "id": 53,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 54,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 14,
+            "parent": "59"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 55,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 45,
+            "parent": "59"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 56,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "59"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 57,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 299,
+            "parent": "59"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 58,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 24678,
+            "parent": "59"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "54",
+                "55",
+                "56",
+                "57",
+                "58"
+            ],
+            "class": "blinds",
+            "id": 59,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 60,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4,
+            "parent": "68"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 61,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2328,
+            "parent": "68"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 62,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 930,
+            "parent": "68"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 63,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 69,
+            "parent": "68"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 64,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 10611,
+            "parent": "68"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 65,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 47,
+            "parent": "68"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 66,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1580,
+            "parent": "68"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 67,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 299,
+            "parent": "68"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "60",
+                "61",
+                "62",
+                "63",
+                "64",
+                "65",
+                "66",
+                "67"
+            ],
+            "class": "chair",
+            "id": 68,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 69,
+            "layer": 0,
+            "lock": false,
+            "numPrimitives": 1,
+            "parent": "70"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "69"
+            ],
+            "class": "blanket",
+            "id": 70,
+            "layer": 0,
+            "lock": false,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 71,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 334,
+            "parent": "75"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 72,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 51,
+            "parent": "75"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 73,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 147,
+            "parent": "75"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 74,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 591,
+            "parent": "75"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "71",
+                "72",
+                "73",
+                "74"
+            ],
+            "class": "blanket",
+            "id": 75,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 76,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 68,
+            "parent": "77"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "76"
+            ],
+            "class": "wall-plug",
+            "id": 77,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 78,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 659,
+            "parent": "82"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 79,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 134,
+            "parent": "82"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 80,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1492,
+            "parent": "82"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 81,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1840,
+            "parent": "82"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "78",
+                "79",
+                "80",
+                "81"
+            ],
+            "class": "table",
+            "id": 82,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 83,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 349,
+            "parent": "87"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 84,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 178,
+            "parent": "87"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 85,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 181,
+            "parent": "87"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 86,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 10,
+            "parent": "87"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "83",
+                "84",
+                "85",
+                "86"
+            ],
+            "class": "cloth",
+            "id": 87,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 88,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 265,
+            "parent": "93"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 89,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 197,
+            "parent": "93"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 90,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4,
+            "parent": "93"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 91,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3134,
+            "parent": "93"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 92,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 5,
+            "parent": "93"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "88",
+                "89",
+                "90",
+                "91",
+                "92"
+            ],
+            "class": "blanket",
+            "id": 93,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 94,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 19,
+            "parent": "97"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 95,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4273,
+            "parent": "97"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 96,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 14,
+            "parent": "97"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "94",
+                "95",
+                "96"
+            ],
+            "class": "blanket",
+            "id": 97,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 98,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 171,
+            "parent": "104"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 99,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 435,
+            "parent": "104"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 100,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 63,
+            "parent": "104"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 101,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1973,
+            "parent": "104"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 102,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 561,
+            "parent": "104"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 103,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3,
+            "parent": "104"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "98",
+                "99",
+                "100",
+                "101",
+                "102",
+                "103"
+            ],
+            "class": "blanket",
+            "id": 104,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 105,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 129,
+            "parent": "111"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 106,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3564,
+            "parent": "111"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 107,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 427,
+            "parent": "111"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 108,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 182,
+            "parent": "111"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 109,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 69,
+            "parent": "111"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 110,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "111"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "105",
+                "106",
+                "107",
+                "108",
+                "109",
+                "110"
+            ],
+            "class": "vent",
+            "id": 111,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 112,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 17,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 113,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2934,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 114,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 275,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 115,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 56,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 116,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 375,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 117,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 196,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 118,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 630,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 119,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 127,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 120,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 12120,
+            "parent": "121"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "112",
+                "113",
+                "114",
+                "115",
+                "116",
+                "117",
+                "118",
+                "119",
+                "120"
+            ],
+            "class": "pillow",
+            "id": 121,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 122,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2,
+            "parent": "127"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 123,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 324,
+            "parent": "127"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 124,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 28926,
+            "parent": "127"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 125,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "127"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 126,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 779,
+            "parent": "127"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "122",
+                "123",
+                "124",
+                "125",
+                "126"
+            ],
+            "class": "wall",
+            "id": 127,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 128,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 146,
+            "parent": "130"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 129,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 168,
+            "parent": "130"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "128",
+                "129"
+            ],
+            "class": "undefined",
+            "id": 130,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 131,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 107,
+            "parent": "136"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 132,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 57,
+            "parent": "136"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 133,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "136"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 134,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3,
+            "parent": "136"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 135,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 32649,
+            "parent": "136"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "131",
+                "132",
+                "133",
+                "134",
+                "135"
+            ],
+            "class": "undefined",
+            "id": 136,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 137,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 14663,
+            "parent": "139"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 138,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 13,
+            "parent": "139"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "137",
+                "138"
+            ],
+            "class": "wall",
+            "id": 139,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 140,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3,
+            "parent": "145"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 141,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 10,
+            "parent": "145"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 142,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 5690,
+            "parent": "145"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 143,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 238,
+            "parent": "145"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 144,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 823,
+            "parent": "145"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "140",
+                "141",
+                "142",
+                "143",
+                "144"
+            ],
+            "class": "floor",
+            "id": 145,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 146,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "153"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 147,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 155,
+            "parent": "153"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 148,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4,
+            "parent": "153"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 149,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4,
+            "parent": "153"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 150,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 24684,
+            "parent": "153"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 151,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 136,
+            "parent": "153"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 152,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "153"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "146",
+                "147",
+                "148",
+                "149",
+                "150",
+                "151",
+                "152"
+            ],
+            "class": "wall",
+            "id": 153,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 154,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "160"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 155,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 166,
+            "parent": "160"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 156,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4391,
+            "parent": "160"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 157,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 8497,
+            "parent": "160"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 158,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "160"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 159,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2,
+            "parent": "160"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "154",
+                "155",
+                "156",
+                "157",
+                "158",
+                "159"
+            ],
+            "class": "wall",
+            "id": 160,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 161,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 21,
+            "parent": "167"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 162,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 14,
+            "parent": "167"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 163,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 376,
+            "parent": "167"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 164,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 22,
+            "parent": "167"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 165,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 25,
+            "parent": "167"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 166,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 38,
+            "parent": "167"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "161",
+                "162",
+                "163",
+                "164",
+                "165",
+                "166"
+            ],
+            "class": "panel",
+            "id": 167,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 168,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1514,
+            "parent": "172"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 169,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1091,
+            "parent": "172"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 170,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2175,
+            "parent": "172"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 171,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 556,
+            "parent": "172"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "168",
+                "169",
+                "170",
+                "171"
+            ],
+            "class": "monitor",
+            "id": 172,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 173,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 12,
+            "parent": "175"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 174,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 51,
+            "parent": "175"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "173",
+                "174"
+            ],
+            "class": "bottle",
+            "id": 175,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 176,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 177,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 66,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 178,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1083,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 179,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 25,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 180,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 386,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 181,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 12,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 182,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 81,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 183,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 7,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 184,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 46,
+            "parent": "185"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "176",
+                "177",
+                "178",
+                "179",
+                "180",
+                "181",
+                "182",
+                "183",
+                "184"
+            ],
+            "class": "desk-organizer",
+            "id": 185,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 186,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "194"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 187,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 253,
+            "parent": "194"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 188,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 16,
+            "parent": "194"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 189,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 182,
+            "parent": "194"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 190,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 8,
+            "parent": "194"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 191,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 22,
+            "parent": "194"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 192,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3,
+            "parent": "194"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 193,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 321,
+            "parent": "194"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "186",
+                "187",
+                "188",
+                "189",
+                "190",
+                "191",
+                "192",
+                "193"
+            ],
+            "class": "undefined",
+            "id": 194,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 195,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 11,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 196,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 517,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 197,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 34,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 198,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 87,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 199,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 387,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 200,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 51,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 201,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 24,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 202,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 16227,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 203,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1025,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 204,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 52,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 205,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 44,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 206,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2128,
+            "parent": "207"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "195",
+                "196",
+                "197",
+                "198",
+                "199",
+                "200",
+                "201",
+                "202",
+                "203",
+                "204",
+                "205",
+                "206"
+            ],
+            "class": "desk",
+            "id": 207,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 208,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 11613,
+            "parent": "211"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 209,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 9040,
+            "parent": "211"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 210,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 479,
+            "parent": "211"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "208",
+                "209",
+                "210"
+            ],
+            "class": "pillar",
+            "id": 211,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 212,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 233,
+            "parent": "213"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "212"
+            ],
+            "class": "wall-plug",
+            "id": 213,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 214,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 61,
+            "parent": "217"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 215,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 21,
+            "parent": "217"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 216,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4,
+            "parent": "217"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "214",
+                "215",
+                "216"
+            ],
+            "class": "wall-plug",
+            "id": 217,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 218,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 219,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 11,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 220,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 10,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 221,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 10,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 222,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 223,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 224,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 225,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 436,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 226,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 33647,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 227,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 23,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 228,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 229,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 230,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 231,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "232"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "218",
+                "219",
+                "220",
+                "221",
+                "222",
+                "223",
+                "224",
+                "225",
+                "226",
+                "227",
+                "228",
+                "229",
+                "230",
+                "231"
+            ],
+            "class": "floor",
+            "id": 232,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 233,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 234,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 235,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 8,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 236,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 237,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 339,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 238,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3306,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 239,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 12972,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 240,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 28,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 241,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 7,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 242,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 243,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 19,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 244,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 245,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2,
+            "parent": "246"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "233",
+                "234",
+                "235",
+                "236",
+                "237",
+                "238",
+                "239",
+                "240",
+                "241",
+                "242",
+                "243",
+                "244",
+                "245"
+            ],
+            "class": "wall",
+            "id": 246,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 247,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 248,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 249,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 250,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 2,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 251,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 252,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 224,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 253,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 13759,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 254,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 960,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 255,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1270,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 256,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 69,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 257,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 12,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 258,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3,
+            "parent": "259"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "247",
+                "248",
+                "249",
+                "250",
+                "251",
+                "252",
+                "253",
+                "254",
+                "255",
+                "256",
+                "257",
+                "258"
+            ],
+            "class": "pillow",
+            "id": 259,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 260,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 261,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 262,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 5,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 263,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 234,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 264,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 4,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 265,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 3364,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 266,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 713,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 267,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 10,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 268,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 18,
+            "parent": "269"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "260",
+                "261",
+                "262",
+                "263",
+                "264",
+                "265",
+                "266",
+                "267",
+                "268"
+            ],
+            "class": "bin",
+            "id": 269,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 270,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 36,
+            "parent": "272"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 271,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 6,
+            "parent": "272"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "270",
+                "271"
+            ],
+            "class": "anonymize_text",
+            "id": 272,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 273,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 8,
+            "parent": "274"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "273"
+            ],
+            "class": "anonymize_text",
+            "id": 274,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 275,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 1,
+            "parent": "278"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 276,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 230,
+            "parent": "278"
+        },
+        {
+            "attributes": {},
+            "children": [],
+            "class": "other-leaf",
+            "id": 277,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 310,
+            "parent": "278"
+        },
+        {
+            "attributes": {},
+            "children": [
+                "275",
+                "276",
+                "277"
+            ],
+            "class": "tissue-paper",
+            "id": 278,
+            "layer": 0,
+            "lock": true,
+            "numPrimitives": 0,
+            "parent": ""
+        }
+    ],
+    "segmentationFile": "./semantic.bin",
+    "version": "0.2"
+}

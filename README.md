@@ -68,6 +68,7 @@ mIoU F1 0.0656, F2 0.0663, F3 0.0604. Figures: `accuracy_comparison.png`, `miou_
   `.git` folder is kept as `_upstream_git/` (renamed so git does not treat it as a submodule);
   large pack files are split, see `drive_extras/REASSEMBLE.md`.
 - `drive_extras/logs`, `production_backup`, `contrib`, `outputs`: the non-code folders from Drive.
+- `drive_extras/datasets/`: Replica ground truth and metadata (no RGB/depth frame images, no raw tar).
 - `drive_extras/REASSEMBLE.md`, `SPLIT_FILES_SHA256.txt`: how to rebuild files split for GitHub's 100MB limit.
 - `DRIVE_MANIFEST.csv`: every file on the Drive folder and its status here.
 - `EXCLUDED_FROM_BACKUP.md`: what is not in this repo, and why.

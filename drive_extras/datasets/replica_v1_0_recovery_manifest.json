@@ -1,0 +1,264 @@
+{
+  "created_at_utc": "2026-09-16T11:46:05.179657+00:00",
+  "dataset": "Replica v1.0",
+  "official_archive": {
+    "path": "/content/drive/MyDrive/research_project/datasets/replica_v1_0",
+    "parts": [
+      {
+        "filename": "replica_v1_0.tar.gz.partaa",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partab",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partac",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partad",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partae",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partaf",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partag",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partah",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partai",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partaj",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partak",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partal",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partam",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partan",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partao",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partap",
+        "size_bytes": 2000000000
+      },
+      {
+        "filename": "replica_v1_0.tar.gz.partaq",
+        "size_bytes": 1859047808
+      }
+    ],
+    "part_count": 17,
+    "total_size_bytes": 33859047808,
+    "total_size_gib": 31.534
+  },
+  "full_extraction": {
+    "path": "/content/drive/MyDrive/research_project/datasets/replica_v1_0/extracted",
+    "extraction_verified_successfully": true,
+    "file_count": 522,
+    "total_size_bytes": 45361373558,
+    "total_size_gib": 42.246,
+    "note": "Complete official Replica v1.0 extraction. Redundant for current contribution pipeline; original archive parts remain available for recovery."
+  },
+  "compact_semantic_gt": {
+    "path": "/content/drive/MyDrive/research_project/datasets/replica_semantic_gt",
+    "status": "complete",
+    "scene_count": 8,
+    "file_count": 32,
+    "total_size_bytes": 346924095,
+    "total_size_gib": 0.323,
+    "sha256_verified": true,
+    "assets": [
+      {
+        "scene": "office_0",
+        "path": "semantic.bin",
+        "size_bytes": 4709984
+      },
+      {
+        "scene": "office_0",
+        "path": "semantic.json",
+        "size_bytes": 1324972
+      },
+      {
+        "scene": "office_0",
+        "path": "habitat/info_semantic.json",
+        "size_bytes": 56790
+      },
+      {
+        "scene": "office_0",
+        "path": "habitat/mesh_semantic.ply",
+        "size_bytes": 27103742
+      },
+      {
+        "scene": "office_1",
+        "path": "semantic.bin",
+        "size_bytes": 3381472
+      },
+      {
+        "scene": "office_1",
+        "path": "semantic.json",
+        "size_bytes": 75175
+      },
+      {
+        "scene": "office_1",
+        "path": "habitat/info_semantic.json",
+        "size_bytes": 44894
+      },
+      {
+        "scene": "office_1",
+        "path": "habitat/mesh_semantic.ply",
+        "size_bytes": 19452680
+      },
+      {
+        "scene": "office_2",
+        "path": "semantic.bin",
+        "size_bytes": 6862728
+      },
+      {
+        "scene": "office_2",
+        "path": "semantic.json",
+        "size_bytes": 105283
+      },
+      {
+        "scene": "office_2",
+        "path": "habitat/info_semantic.json",
+        "size_bytes": 76397
+      },
+      {
+        "scene": "office_2",
+        "path": "habitat/mesh_semantic.ply",
+        "size_bytes": 39482238
+      },
+      {
+        "scene": "office_3",
+        "path": "semantic.bin",
+        "size_bytes": 9481744
+      },
+      {
+        "scene": "office_3",
+        "path": "semantic.json",
+        "size_bytes": 195724
+      },
+      {
+        "scene": "office_3",
+        "path": "habitat/info_semantic.json",
+        "size_bytes": 82836
+      },
+      {
+        "scene": "office_3",
+        "path": "habitat/mesh_semantic.ply",
+        "size_bytes": 54586992
+      },
+      {
+        "scene": "office_4",
+        "path": "semantic.bin",
+        "size_bytes": 7943272
+      },
+      {
+        "scene": "office_4",
+        "path": "semantic.json",
+        "size_bytes": 134983
+      },
+      {
+        "scene": "office_4",
+        "path": "habitat/info_semantic.json",
+        "size_bytes": 57259
+      },
+      {
+        "scene": "office_4",
+        "path": "habitat/mesh_semantic.ply",
+        "size_bytes": 45676849
+      },
+      {
+        "scene": "room_0",
+        "path": "semantic.bin",
+        "size_bytes": 7627728
+      },
+      {
+        "scene": "room_0",
+        "path": "semantic.json",
+        "size_bytes": 215102
+      },
+      {
+        "scene": "room_0",
+        "path": "habitat/info_semantic.json",
+        "size_bytes": 76790
+      },
+      {
+        "scene": "room_0",
+        "path": "habitat/mesh_semantic.ply",
+        "size_bytes": 43890939
+      },
+      {
+        "scene": "room_1",
+        "path": "semantic.bin",
+        "size_bytes": 5158344
+      },
+      {
+        "scene": "room_1",
+        "path": "semantic.json",
+        "size_bytes": 151500
+      },
+      {
+        "scene": "room_1",
+        "path": "habitat/info_semantic.json",
+        "size_bytes": 49102
+      },
+      {
+        "scene": "room_1",
+        "path": "habitat/mesh_semantic.ply",
+        "size_bytes": 29685668
+      },
+      {
+        "scene": "room_2",
+        "path": "semantic.bin",
+        "size_bytes": 5779184
+      },
+      {
+        "scene": "room_2",
+        "path": "semantic.json",
+        "size_bytes": 166400
+      },
+      {
+        "scene": "room_2",
+        "path": "habitat/info_semantic.json",
+        "size_bytes": 54008
+      },
+      {
+        "scene": "room_2",
+        "path": "habitat/mesh_semantic.ply",
+        "size_bytes": 33233316
+      }
+    ]
+  },
+  "recovery_policy": {
+    "archive_parts_are_recovery_source": true,
+    "compact_gt_is_production_source": true,
+    "full_extraction_can_be_deleted_after_manifest_creation": true
+  }
+}
